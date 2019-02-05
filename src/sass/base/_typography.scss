@@ -1,0 +1,14 @@
+html, body {
+  background-color: white;
+  color: black;
+}
+
+body, input, select, textarea, button, a {
+  // font-family: $font-name;
+}
+
+p, address {
+    // font-family: $font-name;
+    font-size: rem(15px);
+    line-height: rem(20px);
+}
