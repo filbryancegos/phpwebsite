@@ -1,6 +1,10 @@
 /*import  fonts here*/
 // @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
 
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+
 /*load abstract*/
 @import 'abstract/variables';
 
@@ -24,3 +28,6 @@
 
 /*load sections*/
 @import 'sections/header';
+@import 'sections/pages';
+
+
