@@ -20,7 +20,7 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 @import 'mixins/mixins_breakpoints';
 
 /*load components*/
-
+@import 'components/_chart.scss';
 
 /*load base*/
 @import 'base/utilities';
@@ -32,6 +32,7 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 
 /*load sections*/
 @import 'sections/header';
+@import 'sections/sidebar';
 @import 'sections/pages';
 
 

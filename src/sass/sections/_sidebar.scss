@@ -1,0 +1,46 @@
+.sidebar {
+	width: rem(340px);
+	height: 100%;
+	background-color: rgb(255, 255, 255px);
+	z-index: 1;
+	position: fixed;
+
+	.sidebar-header {
+		height: calc(100vh - 225px);
+
+		.header-info {
+			font-weight: 500;
+			padding: rem(30px);
+
+			.info {
+				margin-bottom: rem(25px);
+
+				&:first-child { margin-bottom: rem(50px); }
+
+				span { 
+					padding: rem(5px) rem(7px);
+					background-color: $gray_1;
+					border-radius: rem(10px);
+				}
+			}
+
+			.info-basic {
+				p { margin-left: rem(-66px); }
+			}
+
+			.info-full {
+				p { margin-left: rem(-26px); }
+			}
+
+			.info-others {
+				p { margin-left: rem(25px); }
+			}
+		}
+	}	
+
+	.sidebar-footer {
+		height: em(225px);
+		background-color: $gray-1;
+	}	
+
+}
