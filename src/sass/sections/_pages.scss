@@ -1,28 +1,96 @@
 .form-group {
-	&.insurance {
-		input{
-			width: 139px;
-		}
-		
-	}
-	label{ color: $gray-3; }
-	input,
-	select { 
-		border: 0; 
-		height: 41px;
-		border-radius: 2px;
-		font-size: 15px;
-	}
-	.form-control {
-		&:focus{
-			border-color: transparent;
-			box-shadow: none;
-		}
-	}
-	.form-check-input {
-		margin-right: 1.3125rem;
-
-	}
+	.insurance { width: 140px; }
+	.countrybirth { width: 260px; }
+	.dayofbirth { width: 73px; }
 	
 }
 .death { width: 20%; }
+
+.form-control {
+	height: 45px;
+	border: none;
+	&.conrolname {
+		width: 71px;
+	}
+	&.finame,
+	&.lname {
+		width: 264px;
+	}
+	&:focus{
+		box-shadow: none;
+	}
+}
+
+
+
+.form-check-inline {
+	/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #28addb;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+	left: 9px;
+	top: 3px;
+	width: 7px;
+	height: 14px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
+	}
+} 

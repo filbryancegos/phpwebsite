@@ -74,25 +74,26 @@
         </div>
       </nav>
     </header>
-    <div class="row">
+
+    <div class="row add-top-10">
       <div class="col-sm-12 text-center">
-       <p class="fs_14 add-bottom-2">Questions 2/2</p>
+       <p class="fs_14 add-bottom-25">Questions 2/2</p>
        <h1>Personal Information</h1>
      </div>
    </div>
 
-   <div class="row add-top-6 add-bottom-6">
+   <div class="row add-top-7 add-bottom-85">
     <div class="col-sm-12 d-flex flex-content-center">
       <form class="form-inline" role="form">
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control conrolname add-right-25" id="exampleFormControlSelect1">
           <option>Mr</option>
           <option>Ms</option>
           <option>Mrs</option>
           <option>Mr</option>
           <option>Ms</option>
         </select>
-        <input type="text" class="form-control add-left add-right" id="fname" placeholder="First Name">
-        <input type="text" class="form-control" id="lname" placeholder="Last Name">    
+        <input type="text" class="form-control" id="fname" placeholder="First Name">
+        <input type="text" class="form-control add-left-25" id="lname" placeholder="Last Name">    
       </form>
     </div>
   </div>
@@ -101,16 +102,18 @@
 
   <div class="row add-top-8">
     <div class="col text-center">
-      <p class="add-bottom-2">Is the full name of birth different from the name abobe</p>
+      <p class="add-bottom-35">Is the full name of birth different from the name abobe</p>
       <form>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio1">
-            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+          <label class="container fw-bold">Yes
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
           </label>
         </div>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio2">
-            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" checked>No
+          <label class="container fw_bold">No
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
           </label>
         </div>  
       </form>
@@ -120,13 +123,15 @@
       <p class="add-bottom-2">Is the full name of birth different from the name abobe</p>
       <form>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio1">
-            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+          <label class="container fw_bold">No
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
           </label>
         </div>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio2">
-            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" checked>No
+       <label class="container fw_bold">No
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
           </label>
         </div>  
       </form>
@@ -134,46 +139,161 @@
   </div>
 
   <div class="row add-top-8 add-bottom-8">
-    <div class="col"><button type="button" class="btn btn-primary">Next</button></div>
+    <div class="col"><button type="button" class="btn btn-1">Next<i class="fas fa-long-arrow-right"></i></button></div>
   </div>
-</section>
-<div class="col"><button type="button" class="btn btn-1">Next</button></div>
-</div>
-</div>
 
-<div class="container-fluid add-top-3">
   <div class="row">
     <div class="col">  
       <div class="form-group">
         <label for="usr" class="fs_14 add-bottom-2">Insurance Number:</label>
-        <input type="text" class="form-control" id="insurance">
+        <input type="text" class="form-control insurance" id="insurance">
       </div>
 
-      <div class="d-flex">
+    <div class="d-flex add-top-3">
         <div class="form-group">
-          <label for="usr" class="fs_14 add-bottom-2">Date of Birth:</label>
-          <select class="form-control" id="datebirth">
-            <option>Select a Country</option>
-            <option>Ms</option>
-            <option>Mrs</option>
-            <option>Mr</option>
-            <option>Ms</option>
+          <label for="sel1" class="add-bottom-2">Country of Birth</label>
+          <select class="form-control countrybirth" id="sel1">
+          <option>Select Country</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
           </select>
-        </div>
+        </div>  
 
-        <div class="form-group">
-          <label for="usr">Country of Birth:</label>
-          <select class="form-control" id="countrybirth">
-            <option>Select a Country</option>
-            <option>Ms</option>
-            <option>Mrs</option>
-            <option>Mr</option>
-            <option>Ms</option>
-          </select>
+        <div class="add-left-2">
+              <label for="sel1" class="add-bottom-2">Date of Birth</label>
+              <div class="d-flex">
+              <div class="form-group">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              </div>
+              <div class="form-group ">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              </div>
+              <div class="form-group">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>2008</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              </div>
+              </div>
+          </div>
+    </div>
+
+    <label for="sel1" class="add-bottom-2 add-top">Sex</label>
+    <div class="form-group add-bottom">
+        <div class="form-check-inline">
+          <label class="container fw_bold">Male
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
         </div>
-      </div>
+        <div class="form-check-inline">
+       <label class="container fw_bold">Female
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div>  
+    </div>
+
+    <hr>
+
+    <div class="add-top-2">
+              <label for="sel1" class="add-bottom-2">Date of death</label>
+              <div class="d-flex">
+              <div class="form-group">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              </div>
+              <div class="form-group ">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              </div>
+              <div class="form-group">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>2019</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              </div>
+              </div>
+          </div>
+
+
+    <label for="sel1" class="add-bottom-2 add-top-3">Maritial Status</label>
+
+    <div class="form-group add-bottom">
+        <div class="form-check-inline">
+          <label class="container fw_bold">Single
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div>
+        <div class="form-check-inline">
+       <label class="container fw_bold">Married
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+        <div class="form-check-inline">
+       <label class="container fw_bold">Separated
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+    </div>
+
+    <div class="form-group add-bottom">
+        <div class="form-check-inline">
+          <label class="container fw_bold">Common law
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div>
+        <div class="form-check-inline">
+       <label class="container fw_bold">Divorce
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+        <div class="form-check-inline">
+       <label class="container fw_bold">Surviving
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+    </div>
+      
     </div>
   </div>
+
+</section>
+
+</div>
+</div>
+
+<div class="container-fluid add-top-3">
+  
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
