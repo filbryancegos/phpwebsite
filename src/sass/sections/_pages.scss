@@ -1,0 +1,28 @@
+.form-group {
+	&.insurance {
+		input{
+			width: 139px;
+		}
+		
+	}
+	label{ color: $gray-3; }
+	input,
+	select { 
+		border: 0; 
+		height: 41px;
+		border-radius: 2px;
+		font-size: 15px;
+	}
+	.form-control {
+		&:focus{
+			border-color: transparent;
+			box-shadow: none;
+		}
+	}
+	.form-check-input {
+		margin-right: 1.3125rem;
+
+	}
+	
+}
+.death { width: 20%; }

@@ -1,0 +1,30 @@
+// bootstrap overide font and icon colors
+$white-1: #fff;
+$black-1: #000;
+$black-3: #99a0a1;
+$black-4: #3e3737;
+$gray-1: #eff3f4;
+$gray-2: #808e8f;
+$gray-3: #636767;
+$blue-3: #afc4c9;
+$blue-1: #28addb;
+$blue-2: #48a5ca;
+$bg-white: $white-1;
+$enable-rounded: false;
+$green-1: #a8d352;
+
+//font family;
+$rubik: 'Rubik', sans-serif;
+
+.btn {
+	&.btn-1 { 
+		background: $green-1;
+		padding: 14px 53px;
+		color: $white-1;
+		border-radius: 5px;
+		font-size: 18px;
+		&:hover {
+			color: $white-1;
+		 }
+		}
+}
