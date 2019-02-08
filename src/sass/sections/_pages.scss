@@ -3,6 +3,10 @@
 	.countrybirth { width: 260px; }
 	.dayofbirth { width: 73px; }
 	
+	.state,
+	 .city {
+	 	width: 20%;
+	 }
 }
 .death { width: 20%; }
 
@@ -94,3 +98,107 @@
 	
 	}
 } 
+
+
+
+.my-task {
+	.title { color: #48a5ca; }
+	.dropdown-toggle { 
+		background: $white-1;
+		border-radius: 5px;
+	 }
+	.btn-success,
+	.btn-danger { 
+		height: 16px; 
+		margin: 0;
+		padding: 0 10px;
+		border-radius: 5px;
+		font-size: 11px;
+		text-transform: uppercase;
+		background: #a8d352;
+		border: 0;
+	}
+	.fa-check-circle {
+		font-size: 25px;
+		color: #a8d352;
+	}
+	.fa-file-pdf {
+		color: red;
+		font-size: 25px;
+	}
+	.fa-eye-slash {
+		color: #b6c9d0;
+	}
+	small {
+		color: #a8d352;
+		text-transform: uppercase;
+		span { color: #53554e; }
+	}
+	.list-group-item {
+		border: 0;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		height: 70px;
+		&.disabled { opacity: .50; }
+		&.sub-file-downloads {
+			height: 60px;
+			.fa-file-pdf {
+				font-size: 20px;
+			}
+		}
+	}
+	.delayed {
+		.btn-danger {
+			background: #ff5c87;
+		}
+		.fa-check-circle {
+			color: #dae2e4;
+		}
+	}
+	p { 
+		color: #3c4142; 
+		&.sub-p { color: #827d7d; }
+	}
+	&.task-succesfull {
+		.title { color: #429f25; }
+	}
+	.counter { color: #48a5ca; }
+}
+
+.template-survery {
+	.top-title { color: #8c9394; }
+	.title { 
+		font-size: 40px;
+		color: #313334;
+	 }
+	 .btn-2 {
+	 	margin: 10px;
+	 }
+	 .survey-button {
+	 	max-width: 73%;
+	 	margin: 0 auto;
+	 }
+
+
+}
+
+.dots-indicators {
+	li { 
+		width: 8px;
+		height: 8px;
+		background: #cee8f1;
+		border-radius: 50px;
+		margin: 3px;
+		&.active { background: #58d1fd; }
+		&:last-child{
+			width: 43px;
+			margin-left: 15px;
+		}
+	}
+}
+
+.insurance-button {
+	.btn { 
+		margin: 10px;
+	}
+}

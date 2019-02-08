@@ -135,6 +135,13 @@ button { border-radius: 0; }
     flex-wrap: wrap; 
 }
 
+.fw-bold {
+    font-weight: 600;
+}
+.fw-regular {
+    font-weight: 400;
+}
+
 /*Display*/
 .d-block  { display: block !important; }
 .d-inline { display: inline-block !important; }
