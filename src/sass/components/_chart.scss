@@ -26,8 +26,7 @@
 .block {
 	margin: 25px 25px 0 0;
 	border-radius: 5px;
-	float: left;
-	width: 300px;
+	width: 100%;
 	overflow: hidden;
 }
 /******************************************** LEFT CONTAINER *****************************************/
@@ -207,30 +206,37 @@ GRAFICO CIRCULAR PIE CHART
 ******************************************/
 .donut-chart {
 	position: relative;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto 2rem;
-	border-radius: 100%
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	margin: 0 auto;
 }
 p.center-date {
 	background: white;
 	position: absolute;
 	text-align: center;
-	font-size: 50px;
+	font-size: 45px;
 	top:0;left:0;bottom:0;right:0;
-	width: 170px;
-	height: 170px;
+	width: 140px;
+	height: 140px;
 	margin: auto;
 	border-radius: 50%;
 	line-height: 35px;
-	padding: 15% 0 0;
+	flex-direction: column;
+	font-weight: 700;
+}
+.center-date span.first-font-color {
+	line-height: 1; 
+	font-size: 46px;
+	span { font-size: 25px; }
 }
 .center-date span.scnd-font-color {
-	line-height: 0; 
+	line-height: 1; 
+	font-size: 13px;
 }
 .recorte {
 	border-radius: 50%;
-	clip: rect(0px, 200px, 200px, 100px);
+	clip: rect(0px, 160px, 160px, 100px);
 	height: 100%;
 	position: absolute;
 	width: 100%;
@@ -246,27 +252,27 @@ p.center-date {
 }
 
 #porcion1 .quesito {
-	background-color: #E64C65;
+    background-image: linear-gradient(to right, #26a5cc, #37d637);
 	transform: rotate(76deg);
 }
 #porcion2 {
 	transform: rotate(76deg);
 }
 #porcion2 .quesito {
-	background-color: #11A8AB;
+	background-color: #eff3f4;
 	transform: rotate(140deg);
 }
 #porcion3 {
 	transform: rotate(215deg);
 }
 #porcion3 .quesito {
-	background-color: #4FC4F6;
+	background-color: #eff3f4;
 	transform: rotate(113deg);
 }
 #porcionFin {
 	transform:rotate(-32deg);
 }
 #porcionFin .quesito {
-	background-color: #4FC4F6;
+	background-color: #eff3f4;
 	transform: rotate(32deg);
 }
