@@ -15,6 +15,11 @@
 	border: none;
 }
 
+.icon,
+.dots-indicators li {
+	cursor: pointer;
+}
+
 .form-group {
 	.insurance { width: 140px; }
 	.countrybirth { width: 260px; }
@@ -42,6 +47,36 @@
 	}
 }
 
+.personal-information {
+	.form-check-inline {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.person-info {
+		.form-group {
+			padding-left: 11px;
+			padding-right: 11px;
+			select {
+				width: 70px;
+				+.bottom {
+					right: -35px;
+					top: 5px;
+				}
+			}
+			input {
+				border-radius: 5px;
+				width: 267px;
+			}
+		}
+		.select-selected {
+			padding: 10px 16px;
+			padding: 13px 16px;
+			border-radius: 5px;
+			border: none;
+			&:after { top: 15px;}
+		}
+	}
+}
 
 
 .form-check-inline {
@@ -116,8 +151,6 @@
 	}
 }
 
-
-
 .my-task {
 	.title { color: #48a5ca; }
 	.dropdown-toggle {
@@ -126,9 +159,8 @@
 	 }
 	.btn-success,
 	.btn-danger {
-		height: 16px;
 		margin: 0;
-		padding: 0 10px;
+		padding: 2px 10px;
 		border-radius: 5px;
 		font-size: 11px;
 		text-transform: uppercase;
@@ -143,8 +175,16 @@
 		color: red;
 		font-size: 25px;
 	}
-	.fa-eye-slash {
+	.fa-eye-slash,
+	.fa-download {
 		color: #b6c9d0;
+	}
+	.fa-download {
+		background: #e5f4f9;
+		padding: 5px 10px;
+		border-radius: 15px;
+		font-weight: 600;
+		font-size: 13px;
 	}
 	small {
 		color: #a8d352;
@@ -178,6 +218,12 @@
 	}
 	&.task-succesfull {
 		.title { color: #429f25; }
+		&.to-downloads {
+			.list-group-item {
+				background: transparent;
+				border-bottom: 1px solid #dae2e4;
+			}
+		}
 	}
 	.counter { color: #48a5ca; }
 }
@@ -251,8 +297,14 @@
 			}
 		}
 	}
-
+	.select-selected {
+		border-radius: 50px;
+		+.select-items {
+		}
+	}
+	.form-group { padding: 5px 20px; }
 }
+
 
 .custom-select-down {
 	position: relative;
@@ -268,14 +320,14 @@
 			height: 4em;
 			position: absolute;
 			right: -38px;
-			top: 40px;
+			top: 42px;
 			pointer-events: none;
 			&:after {
 				content: '';
 				display: inline-block;
 				margin-top: 0.6em;
-				width: 0.6em;
-				height: 0.6em;
+				width: 0.5em;
+				height: 0.5em;
 				border-top: 0.1em solid #dadede;
 				border-right: 0.1em solid #dadede;
 				-moz-transform: rotate(135deg);
@@ -294,11 +346,11 @@
 	}
 }
 
-.login-form {
-	input[type=text], input[type=password] {
+.login-form,
+.sign-form {
+	input[type=text], input[type=password], input[type=number] {
 		width: 100%;
 		padding: 8px 0px;
-		margin: 8px 0;
 		display: inline-block;
 		border: 0px solid #ccc;
 		box-sizing: border-box;
@@ -309,11 +361,32 @@
 			outline: none;
 		}
 	}
-	.form-login {
+	.form-login,
+	.form-sign {
 		background: $white-1;
 		width: 420px;
 		margin: 0 auto;
 		.col { padding: 60px; }
+	 }
+	 .form-sign {
+			background: transparent;
+			select {
+				background: transparent;
+				padding: 0;
+				border-radius: 50px;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				-o-appearance: none;
+			}
+			.custom-select-down select+.bottom {
+				top: 23px;
+				right: -51px;
+			}
+			.select-selected {
+				background: transparent;
+				border: 0;
+		    padding: 14px 14px 16px 0
+			}
 	 }
 	.title { color: #262829; }
 	label { color: #99a0a1; }
@@ -339,4 +412,5 @@
 	}
 	.sub { color: #a9b3b6; }
 	.content { color: #99a0a1; }
+	.account {span{color: #00a6ff;}}
 }

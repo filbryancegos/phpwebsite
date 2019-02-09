@@ -13,9 +13,9 @@
         <div class="sidebar-header">
           <div class="header-logo">
             <img src="images/logo.png" class="img-fluid " alt="Responsive image">
-          </div>            
+          </div>
           <div class="header-chart full-width mb-5">
-            <div class="donut-chart-block block"> 
+            <div class="donut-chart-block block">
               <div class="donut-chart">
                 <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
                 <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
@@ -23,31 +23,31 @@
                 <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
                 <p class="center-date d-flex justify-content-center align-items-center">
                   <span class="first-font-color">10<span><sup>%</sup></span></span>
-                  <span class="scnd-font-color">1/12</span>    
-                </p>        
+                  <span class="scnd-font-color">1/12</span>
+                </p>
               </div>
             </div>
           </div>
           <div class="header-info">
             <div class="info info-basic d-flex justify-content-between align-items-center text-primary">
-              <i class="fas fa-user-alt"></i>
+              <i class="fas icon  fa-user-alt"></i>
               <p>Basic information</p>
               <span>12</span>
             </div>
-            <div class="info info-full d-flex justify-content-between align-items-center text-muted"">
-              <i class="fas fa-clipboard-list"></i>
+            <div class="info info-full d-flex justify-content-between align-items-center text-muted">
+              <i class="fas icon  fa-clipboard-list"></i>
               <p >Decease full information</p>
               <span>12</span>
             </div>
             <div class="info info-others d-flex justify-content-start align-items-center text-muted">
-              <i class="fas fa-bookmark"></i>
+              <i class="fas icon  fa-bookmark"></i>
               <p >Other information</p>
             </div>
           </div>
         </div>
         <div class="sidebar-footer">
          <div class="footer-info">Sending healing
-         </div>          
+         </div>
          <div class="footer-logo d-flex align-items-center full-width justify-content-start">
           <img src="images/logo.png" class="img-fluid " alt="Footer logo">
           <span>Uponloss</span>
@@ -65,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active mr-4">
-                  <a class="nav-link upgrade-btn btn btn-primary rounded text-white font-weight-bold text-sm-left" href="#"><i class="fas fa-user-alt"></i> Upgrade Account <span class="sr-only">(current)</span></a>
+                  <a class="nav-link upgrade-btn btn btn-primary rounded text-white font-weight-bold text-sm-left" href="#"><i class="fas icon  fa-user-alt"></i> Upgrade Account <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown d-flex align-items-center">
                   <img src="https://placeimg.com/30/30/people" class="img-fluid rounded-circle" alt="Responsive image">
@@ -86,14 +86,38 @@
       </header>
 
       <div class="main-section">
-        <section>
-
+        <section class="personal-information">
           <div class="row no-margin add-top-10">
             <div class="col-sm-12 text-center">
               <p class="fs_14 add-bottom-25">Questions 2/2</p>
               <h1>Personal Information</h1>
             </div>
           </div>
+
+          <div class="row person-info no-margin add-top-7 add-bottom-8 d-flex vertical-align flex-content-center">
+            <div class="form-group custom-select-down">
+              <div class="custom-select-arrow" style="width:71px;">
+                <select>
+                  <option value="0">Mrs</option>
+                  <option value="1">Mr</option>
+                  <option value="0">Mrs</option>
+                  <option value="1">Mr</option>
+
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="usr">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="usr">
+            </div>
+
+          </div>
+
+          <hr>
 
           <div class="row no-margin add-top-8">
             <div class="col text-center">
@@ -115,7 +139,7 @@
 
             </div>
             <div class="col text-center">
-              <p class="add-bottom-2">Is the full name of birth different from the name abobe</p>
+              <p class="add-bottom-35">Is the full name of birth different from the name abobe</p>
               <form>
                 <div class="form-check-inline">
                   <label class="container fw_bold">No
@@ -133,13 +157,18 @@
             </div>
           </div>
 
+          <div class="row no-margin add-top-8 add-bottom-8">
+            <div class="col">
+              <button type="button" class="btn btn-1 btn-transparent">Previous</i></button>
+              <button type="button" class="btn btn-1">Next<i class="fas icon  fa-arrow-right pad-left"></i></button>
+            </div>
+          </div>
+
         </section>
 
         <section>
 
-          <div class="row no-margin add-top-8 add-bottom-8">
-            <div class="col"><button type="button" class="btn btn-1">Next<i class="fas fa-long-arrow no-margin-right"></i></button></div>
-          </div>
+
 
           <div class="row no-margin">
             <div class="col">
@@ -151,14 +180,15 @@
               <div class="d-flex add-top-3">
                 <div class="form-group custom-select-down">
                   <label for="sel1" class="add-bottom-2">Country of Birth</label>
-                  <select class="form-control countrybirth" id="sel1">
-                    <option>Select Country</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                  <div class="custom-select-arrow" style="width:263px;">
+                    <select>
+                      <option value="0">Select country</option>
+                      <option value="1">USA</option>
+                      <option value="0">California</option>
+                      <option value="1">Sample</option>
 
-                  </select>
-                  <span class="bottom"></span>
+                    </select>
+                  </div>
 
                 </div>
 
@@ -166,31 +196,39 @@
                   <label for="sel1" class="add-bottom-2">Date of Birth</label>
                   <div class="d-flex">
                     <div class="form-group custom-select-down">
-                      <select class="form-control dayofbirth" id="sel1">
-                        <option>12</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                      </select>
-                      <span class="bottom arrow no-margin"></span>
-                    </div>
-                    <div class="form-group custom-select-down">
-                      <select class="form-control dayofbirth" id="sel1">
-                        <option>12</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+                      <div class="custom-select-arrow" style="width:73px;">
+                        <select>
+                          <option value="0">12</option>
+                          <option value="1">12</option>
+                          <option value="0">3</option>
+                          <option value="1">4</option>
 
-                      </select>
+                        </select>
+                      </div>
                       <span class="bottom arrow no-margin"></span>
                     </div>
                     <div class="form-group custom-select-down">
-                      <select class="form-control dayofbirth" id="sel1">
-                        <option>2008</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                      </select>
+                      <div class="custom-select-arrow" style="width:73px;">
+                        <select>
+                          <option value="0">4</option>
+                          <option value="1">5</option>
+                          <option value="0">3</option>
+                          <option value="1">22</option>
+
+                        </select>
+                      </div>
+                      <span class="bottom arrow no-margin"></span>
+                    </div>
+                    <div class="form-group custom-select-down">
+                      <div class="custom-select-arrow" style="width:100px;">
+                        <select>
+                          <option value="0">2008</option>
+                          <option value="1">2003</option>
+                          <option value="0">2002</option>
+                          <option value="1">2001</option>
+
+                        </select>
+                      </div>
                       <span class="bottom arrow no-margin"></span>
                     </div>
                   </div>
@@ -219,31 +257,36 @@
                 <label for="sel1" class="add-bottom-2">Date of death</label>
                 <div class="d-flex">
                   <div class="form-group custom-select-down">
-                    <select class="form-control dayofbirth" id="sel1">
-                      <option>12</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
-                    <span class="bottom arrow no-margin"></span>
+                    <div class="custom-select-arrow" style="width:73px;">
+                      <select>
+                        <option value="0">12</option>
+                        <option value="1">12</option>
+                        <option value="0">3</option>
+                        <option value="1">4</option>
+
+                      </select>
+                    </div>
                   </div>
                   <div class="form-group custom-select-down">
-                    <select class="form-control dayofbirth" id="sel1">
-                      <option>12</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
-                    <span class="bottom arrow no-margin"></span>
+                    <div class="custom-select-arrow" style="width:73px;">
+                      <select>
+                        <option value="0">33</option>
+                        <option value="1">12</option>
+                        <option value="0">3</option>
+                        <option value="1">4</option>
+
+                      </select>
+                    </div>
                   </div>
                   <div class="form-group custom-select-down">
-                    <select class="form-control dayofbirth" id="sel1">
-                      <option>2019</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
-                    <span class="bottom arrow no-margin"></span>
+                    <div class="custom-select-arrow" style="width:100px;">
+                      <select>
+                        <option value="0">2008</option>
+                        <option value="1">2003</option>
+                        <option value="0">2002</option>
+                        <option value="1">2001</option>
+
+                      </select>
                   </div>
                 </div>
               </div>
@@ -303,16 +346,18 @@
             <div class="col">
               <h2 class="title">My Task and Documents</h2>
             </div>
-            <div class="col text-right">
-              <button class="btn btn-default dropdown-toggle fs_12" type="button" id="menu1" data-toggle="dropdown">Last 7 days
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
-                </ul>
+            <div class="col d-flex flex-content-end">
+              <div class="custom-select-arrow" style="width:200px;">
+                <select>
+                  <option value="0">Last 7 days</option>
+                  <option value="1">Last 6 days</option>
+                  <option value="2">Last 5 days</option>
+                  <option value="3">Last 4 days</option>
+                  <option value="4">Last 3 days</option>
+                  <option value="5">Last 2 days</option>
+                  <option value="6">Last 1 days</option>
+                </select>
+              </div>
               </div>
           </div>
         </section>
@@ -323,7 +368,7 @@
               <ul class="list-group">
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-check-circle pad-right-25"></i>
+                    <i class="fas icon  fa-check-circle pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Cras justo odio</p>
                       <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -334,19 +379,19 @@
 
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-file-pdf pad-right-25"></i>
+                    <i class="fas icon  fa-file-pdf pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Basic Forms</p>
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
+                    <i class="fas icon  fa-arrow no-margin-to-bottom"></i></div>
 
 
                 </li>
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-check-circle pad-right-25"></i>
+                    <i class="fas icon  fa-check-circle pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Cras justo odio</p>
                       <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -356,7 +401,7 @@
                 </li>
                 <li class="list-group-item d-flex delayed">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-check-circle pad-right-25"></i>
+                    <i class="fas icon  fa-check-circle pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Cras justo odio</p>
                       <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -368,24 +413,24 @@
 
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-file-pdf pad-right-25"></i>
+                    <i class="fas icon  fa-file-pdf pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Insurance Forms</p>
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
+                    <i class="fas icon  fa-arrow no-margin-to-bottom"></i></div>
                 </li>
 
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-file-pdf pad-right-25"></i>
+                    <i class="fas icon  fa-file-pdf pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Other Forms</p>
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
+                    <i class="fas icon  fa-arrow no-margin-to-bottom"></i></div>
                 </li>
               </ul>
             </div>
@@ -397,16 +442,18 @@
             <div class="col">
               <h2 class="title">My Task </h2>
             </div>
-            <div class="col text-right">
-              <button class="btn btn-default dropdown-toggle fs_12" type="button" id="menu1" data-toggle="dropdown">Last 7 days
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
-                </ul>
+            <div class="col d-flex flex-content-end">
+              <div class="custom-select-arrow" style="width:200px;">
+                <select>
+                  <option value="0">Last 7 days</option>
+                  <option value="1">Last 6 days</option>
+                  <option value="2">Last 5 days</option>
+                  <option value="3">Last 4 days</option>
+                  <option value="4">Last 3 days</option>
+                  <option value="5">Last 2 days</option>
+                  <option value="6">Last 1 days</option>
+                </select>
+              </div>
               </div>
             </div>
         </section>
@@ -418,7 +465,7 @@
               <ul class="list-group">
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-check-circle pad-right-25"></i>
+                    <i class="fas icon  fa-check-circle pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Cras justo odio</p>
                       <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -431,7 +478,7 @@
 
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-check-circle pad-right-25"></i>
+                    <i class="fas icon  fa-check-circle pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Cras justo odio</p>
                       <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -443,7 +490,7 @@
 
                 <li class="list-group-item d-flex delayed">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-check-circle pad-right-25"></i>
+                    <i class="fas icon  fa-check-circle pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Cras justo odio</p>
                       <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -457,7 +504,7 @@
 
                   <li class="list-group-item d-flex delayed">
                     <div class="col d-flex vertical-align no-pad-left">
-                      <i class="fas fa-check-circle pad-right-25"></i>
+                      <i class="fas icon  fa-check-circle pad-right-25"></i>
                       <div>
                         <p class="fs_16 fw-bold">Cras justo odio</p>
                         <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -470,7 +517,7 @@
 
                   <li class="list-group-item d-flex">
                     <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                      <i class="fas fa-check-circle pad-right-25"></i>
+                      <i class="fas icon  fa-check-circle pad-right-25"></i>
                       <div>
                         <p class="fs_16 fw-bold">Cras justo odio</p>
                         <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -483,7 +530,7 @@
 
                   <li class="list-group-item d-flex">
                     <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                      <i class="fas fa-check-circle pad-right-25"></i>
+                      <i class="fas icon  fa-check-circle pad-right-25"></i>
                       <div>
                         <p class="fs_16 fw-bold">Cras justo odio</p>
                         <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -494,7 +541,7 @@
 
                   <li class="list-group-item d-flex delayed">
                     <div class="col d-flex vertical-align no-pad-left">
-                      <i class="fas fa-check-circle pad-right-25"></i>
+                      <i class="fas icon  fa-check-circle pad-right-25"></i>
                       <div>
                         <p class="fs_16 fw-bold">Cras justo odio</p>
                         <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
@@ -523,21 +570,21 @@
 
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-file-pdf pad-right-25"></i>
+                    <i class="fas icon  fa-file-pdf pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Basic Forms<span class="counter"> (9)</span></p>
                       <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
+                    <i class="fas icon  fa-arrow no-margin-to-bottom"></i></div>
 
 
                   </li>
 
                   <li class="list-group-item d-flex disabled">
                     <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                      <i class="fas fa-file-pdf pad-right-25"></i>
+                      <i class="fas icon  fa-file-pdf pad-right-25"></i>
                       <div>
                         <p class="fs_16 ">Insurance and Beneficiary</p>
                         <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
@@ -551,7 +598,7 @@
                   </li>
                   <li class="list-group-item d-flex disabled">
                     <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                      <i class="fas fa-file-pdf pad-right-25"></i>
+                      <i class="fas icon  fa-file-pdf pad-right-25"></i>
                       <div>
                         <p class="fs_16 ">Insurance and Beneficiary</p>
                         <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
@@ -585,60 +632,60 @@
 
                 <li class="list-group-item d-flex">
                   <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                    <i class="fas fa-file-pdf pad-right-25"></i>
+                    <i class="fas icon  fa-file-pdf pad-right-25"></i>
                     <div>
                       <p class="fs_16 fw-bold">Basic Forms<span class="counter"> (9)</span></p>
                       <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
+                    <i class="fas icon  fa-arrow no-margin-to-bottom"></i></div>
 
 
                   </li>
 
                   <li class="list-group-item sub-file-downloads d-flex">
                     <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                      <i class="fas fa-file-pdf pad-right-25 fs_20"></i>
+                      <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
                       <div>
                         <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet.pdf</p>
                       </div>
                     </div>
-                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                      <i class="fas fa-eye-slash add-right-15"></i><i class="fas fa-eye-slash"></i></div>
+                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                      <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
 
 
                     </li>
 
                     <li class="list-group-item sub-file-downloads d-flex">
                       <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                        <i class="fas fa-file-pdf pad-right-25 fs_20"></i>
+                        <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
                         <div>
                           <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet.pdf</p>
                         </div>
                       </div>
-                      <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                        <i class="fas fa-eye-slash add-right-15"></i><i class="fas fa-eye-slash"></i></div>
+                      <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                        <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
 
 
                       </li>
 
                       <li class="list-group-item sub-file-downloads d-flex">
                         <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                          <i class="fas fa-file-pdf pad-right-25 fs_20"></i>
+                          <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
                           <div>
                             <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet.pdf</p>
                           </div>
                         </div>
-                        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                          <i class="fas fa-eye-slash add-right-15"></i><i class="fas fa-eye-slash"></i></div>
+                        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                          <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
 
 
                         </li>
 
                         <li class="list-group-item d-flex disabled">
                           <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                            <i class="fas fa-file-pdf pad-right-25"></i>
+                            <i class="fas icon  fa-file-pdf pad-right-25"></i>
                             <div>
                               <p class="fs_16 ">Insurance and Beneficiary</p>
                               <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
@@ -652,7 +699,7 @@
                         </li>
                         <li class="list-group-item d-flex disabled">
                           <div class="col-sm-6 d-flex vertical-align no-pad-left">
-                            <i class="fas fa-file-pdf pad-right-25"></i>
+                            <i class="fas icon  fa-file-pdf pad-right-25"></i>
                             <div>
                               <p class="fs_16 ">Insurance and Beneficiary</p>
                               <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
@@ -679,18 +726,20 @@
             </div>
 
             <div class="col survey-button text-center">
-              <button type="button" class="btn btn-2">Selection 1</button>
-              <button type="button" class="btn btn-2">Selection 1</button>
-              <button type="button" class="btn btn-2">Selection 1</button>
-              <button type="button" class="btn btn-2">Selection 1</button>
-              <button type="button" class="btn btn-2">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted">Selection 1</button>
 
             </div>
 
           </div>
 
           <div class="row no-margin">
-            <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+            <div class="col text-center">
+              <button type="button" class="btn btn-1">Next<i class="fas icon  fa-arrow-right pad-left"></i></button>
+            </div>
           </div>
         </section>
 
@@ -717,12 +766,12 @@
           <div class="row no-margin add-bottom-10 insurance-button">
             <div class="col d-flex flex-content-center">
               <button type="button" class="btn btn-3">No</button>
-              <button type="button" class="btn btn-4 active">Yes</button>
+              <button type="button" class="btn btn-4 active">Yes <i class="fas icon  fa-arrow-right pad-left"></i></button>
             </div>
 
           </div>
           <div class="row no-margin">
-            <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+            <div class="col text-center"><button type="button" class="btn btn-1">Next<i class="fas icon  fa-arrow-right pad-left"></i></button></div>
           </div>
 
           <div class="row no-margin add-top-5 add-bottom-4">
@@ -753,7 +802,7 @@
 
           </div>
           <div class="row no-margin">
-            <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+            <div class="col text-center"><button type="button" class="btn btn-1">Next<i class="fas icon  fa-arrow-right pad-left"></i></button></div>
           </div>
 
           <div class="row no-margin add-top-5 add-bottom-4">
@@ -782,24 +831,28 @@
               <div class="col d-flex flex-content-center">
                 <div class="form-group d-flex vertical-align ">
                   <label for="sel1" class="state text-uppercase">State</label>
-                  <select class="form-control" id="sel1">
-                    <option>Nova Scotia</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                  <span class="bottom"></span>
+                  <div class="custom-select-arrow" style="width:214px;">
+                    <select>
+                      <option value="0">Select state</option>
+                      <option value="1">USA</option>
+                      <option value="0">California</option>
+                      <option value="1">Sample</option>
+
+                    </select>
+                  </div>
                 </div>
 
                 <div class="form-group d-flex vertical-align ">
                   <label for="sel1" class="city text-uppercase">City</label>
-                  <select class="form-control" id="sel1">
-                    <option>Nova Scotia</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                  <span class="bottom"></span>
+                  <div class="custom-select-arrow" style="width:214px;">
+                    <select>
+                      <option value="0">Select city</option>
+                      <option value="1">New york</option>
+                      <option value="0">California</option>
+                      <option value="1">Sample</option>
+
+                    </select>
+                  </div>
                 </div>
               </div>
 
@@ -808,7 +861,7 @@
 
 
           <div class="row no-margin add-top-10">
-            <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+            <div class="col text-center"><button type="button" class="btn btn-1">Next<i class="fas icon  fa-arrow-right pad-left"></i></button></div>
           </div>
 
           <div class="row no-margin add-top-5 add-bottom-4">
@@ -828,13 +881,13 @@
             <form class="form-login animate" >
               <div class="col">
                 <h1 class="title text-center add-bottom-5">Member Login</h1>
-                <label for="uname" class="fs_14 pad-bottom text-capitalize">Username</label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="uname" class="fs_14 text-capitalize">Username</label>
+                <input type="text" placeholder="" name="uname" required>
 
-                <label for="psw" class="fs_14 pad-bottom add-top-25 text-capitalize"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw" class="fs_14  add-top-2 text-capitalize"><b>Password</b></label>
+                <input type="password" placeholder="" name="psw" required>
 
-                <button type="button" class="btn btn-default add-top-25 full-width fs_18 fw-bold">Login</button>
+                <button type="button" class="btn btn-default add-top-25 full-width fs_18 fw-bold">Login <i class="fas icon  fa-arrow-right pad-left"></i></button>
 
                 <p class="fw-bold add-top-45 text-center">Don't have an account? <span>Sign Up</span></p>
 
@@ -888,9 +941,423 @@
                 </div>
               </div>
 
+              <div class="col-lg-12 text-center add-top-65">
+                <p class="account">Already have an account? <span>Sign In</span></p>
+              </div>
+
             </div>
 
           </div>
+        </section>
+
+        <section>
+          <div class="row no-margin my-task task-succesfull add-top-7 add-bottom-7">
+            <div class="col">
+              <h2 class="title text-center">You successfully downloaded forms check other items that might you need!</h2>
+            </div>
+          </div>
+
+          <div class="row no-margin my-task task-succesfull ">
+            <div class="col">
+              <ul class="list-group">
+
+                <li class="list-group-item d-flex">
+                  <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                    <i class="fas icon  fa-file-pdf pad-right-25"></i>
+                    <div>
+                      <p class="fs_16 fw-bold">Basic Forms<span class="counter"> (9)</span></p>
+                      <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                      </i><i class="fas icon  fa-download"></i></div>
+
+
+                  </li>
+
+                  <li class="list-group-item d-flex disabled">
+                    <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                      <i class="fas icon  fa-file-pdf pad-right-25"></i>
+                      <div>
+                        <p class="fs_16 ">Insurance and Beneficiary</p>
+                        <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+                      <p class="fs_15 sub-p">Answers Questions</p>
+                    </div>
+
+
+                  </li>
+                  <li class="list-group-item d-flex disabled">
+                    <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                      <i class="fas icon  fa-file-pdf pad-right-25"></i>
+                      <div>
+                        <p class="fs_16 ">Insurance and Beneficiary</p>
+                        <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+                      <p class="fs_15  sub-p">Answers Questions</p>
+                    </div>
+
+
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+        </section>
+
+        <section>
+          <div class="row no-margin my-task task-succesfull add-top-7 add-bottom-7">
+            <div class="col">
+              <h2 class="title text-center blue-1">You need 9 documents to download and fill up</h2>
+              <p class="text-center add-top">Lorem sit amet Lorem sit amet Lorem sit amet Lorem sit amet Lorem sit amet </p>
+            </div>
+          </div>
+
+          <div class="row no-margin my-task task-succesfull to-downloads ">
+            <div class="col">
+              <ul class="list-group">
+
+                  <li class="list-group-item sub-file-downloads d-flex">
+                    <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                      <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                      <div>
+                        <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                      <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                    </li>
+
+                    <li class="list-group-item sub-file-downloads d-flex">
+                      <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                        <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                        <div>
+                          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                        <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                      </li>
+
+                      <li class="list-group-item sub-file-downloads d-flex">
+                        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                          <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                          <div>
+                            <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                          <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+                        </li>
+
+                      </ul>
+
+            </div>
+
+            <div class="col">
+              <ul class="list-group">
+
+                  <li class="list-group-item sub-file-downloads d-flex">
+                    <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                      <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                      <div>
+                        <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                      <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                    </li>
+
+                    <li class="list-group-item sub-file-downloads d-flex">
+                      <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                        <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                        <div>
+                          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                        <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                      </li>
+
+                      <li class="list-group-item sub-file-downloads d-flex">
+                        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                          <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                          <div>
+                            <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                          <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+                        </li>
+
+                      </ul>
+
+            </div>
+          </div>
+          <div class="row no-margin add-top-10">
+            <div class="col d-flex flex-content-end vertical-align">
+              <p class="pad-left">Download 9 Document <span> Click here</span></p>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-1 "><i class="fas icon  fa-download pad-right"></i> Download filled form?</button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="row no-margin my-task task-succesfull add-top-7 add-bottom-7">
+            <div class="col">
+              <h2 class="title text-center blue-1">You need 9 documents to download and fill up</h2>
+              <p class="text-center add-top">Lorem sit amet Lorem sit amet Lorem sit amet Lorem sit amet Lorem sit amet </p>
+            </div>
+          </div>
+
+          <div class="row no-margin my-task task-succesfull to-downloads ">
+            <div class="col">
+              <ul class="list-group">
+
+                  <li class="list-group-item sub-file-downloads d-flex">
+                    <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                      <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                      <div>
+                        <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                      <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                    </li>
+
+                    <li class="list-group-item sub-file-downloads d-flex">
+                      <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                        <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                        <div>
+                          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                        <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                      </li>
+
+                      <li class="list-group-item sub-file-downloads d-flex">
+                        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                          <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                          <div>
+                            <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                          <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+                        </li>
+
+                      </ul>
+
+            </div>
+
+            <div class="col">
+              <ul class="list-group">
+
+                  <li class="list-group-item sub-file-downloads d-flex">
+                    <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                      <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                      <div>
+                        <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                      <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                    </li>
+
+                    <li class="list-group-item sub-file-downloads d-flex">
+                      <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                        <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                        <div>
+                          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                        <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+
+                      </li>
+
+                      <li class="list-group-item sub-file-downloads d-flex">
+                        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+                          <i class="fas icon  fa-file-pdf pad-right-25 fs_20"></i>
+                          <div>
+                            <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet.pdf</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end no-pad-right">
+                          <i class="fas icon  fa-eye-slash add-right-15"></i><i class="fas icon  fa-download"></i></div>
+
+                        </li>
+
+                      </ul>
+
+            </div>
+          </div>
+          <div class="row no-margin add-top-10">
+
+            <div class="col text-center">
+              <button type="button" class="btn btn-1 bg-1"><i class="fas icon  fa-download pad-right"></i> Download all</button>
+            </div>
+          </div>
+        </section>
+
+
+        <section>
+
+          <div class="row no-margin text-center add-top-10">
+              <div class="col-lg-12 add-bottom-35">
+                <img src="images/logo.png" class="img-fluid " alt="Responsive image">
+              </div>
+              <div class="col-lg-12">
+                <h1 class="title black-1">Sign up for an Account</h1>
+                <p class="half-pad fs_15 sub-title">Select account type</p>
+              </div>
+            </div>
+
+          <div class="row no-margin sign-form">
+            <form class="form-sign animate">
+              <div class="col">
+                <label for="uname" class="fs_14 add-top-2 text-capitalize">First Name</label>
+                <input type="text" placeholder="" name="fname" required="">
+
+                <label for="uname" class="fs_14 add-top-2 text-capitalize">Last Name</label>
+                <input type="text" placeholder="" name="fname" required="">
+
+
+
+                <label for="psw" class="fs_14  add-top-2 text-capitalize">Phone Number</label>
+                <input type="text" placeholder="" name="phone" required="">
+
+                <button type="button" class="btn btn-default add-top-25 full-width fs_18 fw-bold">Next <i class="fas icon  fa-arrow-right pad-left"></i></button>
+
+                <p class="fw-bold add-top-45 text-center">Already have an account? <span class="blue-1">Sign in</span></p>
+
+              </div>
+            </form>
+
+          </div>
+        </section>
+
+        <section>
+
+          <div class="row no-margin text-center add-top-10">
+              <div class="col-lg-12 add-bottom-35">
+                <img src="images/logo.png" class="img-fluid " alt="Responsive image">
+              </div>
+              <div class="col-lg-12">
+                <h1 class="title black-1">One last thing</h1>
+                <p class="add-top fs_15 sub-title">Country and State/Province where <span class="red-1">deceased</span> has last lived</p>
+              </div>
+            </div>
+
+          <div class="row no-margin sign-form">
+            <form class="form-sign animate">
+              <div class="col">
+                <div class="form-group custom-select-down">
+                  <label for="sel1" class="state">Country</label>
+                  <div class="custom-select-arrow" style="width:300px;">
+                    <select>
+                      <option value="0">Select country</option>
+                      <option value="1">USA</option>
+                      <option value="0">California</option>
+                      <option value="1">Sample</option>
+
+                    </select>
+                  </div>
+                  <div class="border"></div>
+                </div>
+
+                <div class="form-group custom-select-down add-top-2">
+                  <label for="sel1" class="state">State</label>
+                  <div class="custom-select-arrow" style="width:300px;">
+                    <select>
+                      <option value="0">Select country</option>
+                      <option value="1">USA</option>
+                      <option value="0">California</option>
+                      <option value="1">Sample</option>
+
+                    </select>
+                  </div>
+                  <span class="bottom"></span>
+                  <div class="border"></div>
+                </div>
+
+
+
+
+                <button type="button" class="btn btn-default add-top-25 full-width fs_18 fw-bold">Next<i class="fas icon  fa-arrow-right pad-left"></i></button>
+
+                <p class="fw-bold add-top-45 text-center">Already have an account? <span class="blue-1">Sign in</span></p>
+
+              </div>
+            </form>
+
+          </div>
+        </section>
+
+        <section>
+
+          <div class="row no-margin text-center add-top-10">
+              <div class="col-lg-12 add-bottom-35">
+                <img src="images/logo.png" class="img-fluid " alt="Responsive image">
+              </div>
+              <div class="col-lg-12">
+                <h1 class="title black-1">Sign up for an Account</h1>
+                <p class="add-top fs_15 sub-title">Tell me more about yourself</p>
+              </div>
+            </div>
+
+            <div class="row no-margin sign-form">
+            <form class="form-sign animate">
+              <div class="col">
+                <label for="uname" class="fs_14 pad-top-2 text-capitalize">Email Address</label>
+                <input type="text" placeholder="" name="fname" required="">
+
+                <label for="uname" class="fs_14 pad-top-2 text-capitalize">Password</label>
+                <input type="password" placeholder="" name="fname" required="">
+
+                <label for="uname" class="fs_14 pad-top-2 text-capitalize">Confirm Password</label>
+                <input type="password" placeholder="" name="confirmpassword" required="">
+
+
+
+
+
+                <button type="button" class="btn btn-default add-top-25 full-width fs_18 fw-bold">Next <i class="fas icon  fa-arrow-right pad-left"></i></button>
+
+                <p class="fw-bold add-top-45 text-center">Already have an account? <span class="blue-1">Sign in</span></p>
+
+              </div>
+            </form>
+
+          </div>
+
+
         </section>
       </div>
     </div>
@@ -900,5 +1367,83 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script>
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select-arrow");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+
+
+
+
+
+</script>
   </body>
 </html>
