@@ -8,11 +8,18 @@
 	}
 }
 
+%box-shadow {
+	-webkit-box-shadow: 7px 6px 43px -13px rgba(107,105,107,1);
+	-moz-box-shadow: 7px 6px 43px -13px rgba(107,105,107,1);
+	box-shadow: 7px 6px 43px -13px #6b696b;
+	border: none;
+}
+
 .form-group {
 	.insurance { width: 140px; }
 	.countrybirth { width: 260px; }
 	.dayofbirth { width: 73px; }
-	
+
 	.state,
 	 .city {
 	 	padding-right: 20px;
@@ -105,21 +112,21 @@
 	border-width: 0 2px 2px 0;
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
-	
+
 	}
-} 
+}
 
 
 
 .my-task {
 	.title { color: #48a5ca; }
-	.dropdown-toggle { 
+	.dropdown-toggle {
 		background: $white-1;
 		border-radius: 5px;
 	 }
 	.btn-success,
-	.btn-danger { 
-		height: 16px; 
+	.btn-danger {
+		height: 16px;
 		margin: 0;
 		padding: 0 10px;
 		border-radius: 5px;
@@ -165,8 +172,8 @@
 			color: #dae2e4;
 		}
 	}
-	p { 
-		color: #3c4142; 
+	p {
+		color: #3c4142;
 		&.sub-p { color: #827d7d; }
 	}
 	&.task-succesfull {
@@ -177,7 +184,7 @@
 
 .template-survery {
 	.top-title { color: #8c9394; }
-	.title { 
+	.title {
 		font-size: 40px;
 		color: #313334;
 	 }
@@ -193,7 +200,7 @@
 }
 
 .dots-indicators {
-	li { 
+	li {
 		width: 8px;
 		height: 8px;
 		background: #cee8f1;
@@ -208,7 +215,7 @@
 }
 
 .insurance-button {
-	.btn { 
+	.btn {
 		margin: 10px;
 	}
 }
@@ -222,7 +229,7 @@
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		-o-appearance: none;
-		+.bottom {     
+		+.bottom {
 			display: inline-block;
 			width: 4em;
 			height: 4em;
@@ -244,7 +251,7 @@
 			}
 		}
 	}
-	
+
 }
 
 .custom-select-down {
@@ -255,7 +262,7 @@
 		-o-appearance: none;
 		border-radius: 3px;
 
-		+.bottom {     
+		+.bottom {
 			display: inline-block;
 			width: 4em;
 			height: 4em;
@@ -275,7 +282,7 @@
 				-webkit-transform: rotate(135deg);
 				transform: rotate(135deg);
 			}
-			&.arrow { 
+			&.arrow {
 				right: -45px;
 				top: 4px;
 			}
@@ -302,7 +309,7 @@
 			outline: none;
 		}
 	}
-	.form-login { 
+	.form-login {
 		background: $white-1;
 		width: 420px;
 		margin: 0 auto;
@@ -316,7 +323,14 @@
 }
 
 .pricing {
-	.card { width: 328px; margin: 0 auto; padding: 59px 48px 5px 48px; }
+	.title { color: #212324; }
+	.sub-title {color: #64696a;}
+	.card {
+		width: 328px;
+		margin: 0 auto;
+		padding: 59px 48px 5px 48px;
+		@extend %box-shadow;
+	}
 	.card-title { color: #151717; }
 	.card-price  {
 		&.free {
