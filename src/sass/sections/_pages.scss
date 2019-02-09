@@ -314,3 +314,15 @@
 		span { color: #00a6ff; cursor: pointer; }
 	 }
 }
+
+.pricing {
+	.card { width: 328px; margin: 0 auto; padding: 59px 48px 5px 48px; }
+	.card-title { color: #151717; }
+	.card-price  {
+		&.free {
+			color: #a9b3b6;
+		}
+	}
+	.sub { color: #a9b3b6; }
+	.content { color: #99a0a1; }
+}
