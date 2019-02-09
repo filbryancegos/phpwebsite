@@ -85,13 +85,17 @@
    <div class="row add-top-7 add-bottom-85">
     <div class="col-sm-12 d-flex flex-content-center">
       <form class="form-inline" role="form">
-        <select class="form-control conrolname add-right-25" id="exampleFormControlSelect1">
+        <div class="custom-select-down">
+          <select class="form-control conrolname add-right-25" id="exampleFormControlSelect1">
           <option>Mr</option>
           <option>Ms</option>
           <option>Mrs</option>
           <option>Mr</option>
           <option>Ms</option>
         </select>
+          <span class="bottom name-arrow"></span>
+        </div>
+        
         <input type="text" class="form-control" id="fname" placeholder="First Name">
         <input type="text" class="form-control add-left-25" id="lname" placeholder="Last Name">    
       </form>
@@ -150,42 +154,49 @@
       </div>
 
     <div class="d-flex add-top-3">
-        <div class="form-group">
+        <div class="form-group custom-select-down">
           <label for="sel1" class="add-bottom-2">Country of Birth</label>
           <select class="form-control countrybirth" id="sel1">
           <option>Select Country</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
+
           </select>
+          <span class="bottom"></span>
+
         </div>  
 
         <div class="add-left-2">
               <label for="sel1" class="add-bottom-2">Date of Birth</label>
               <div class="d-flex">
-              <div class="form-group">
+              <div class="form-group custom-select-down">
               <select class="form-control dayofbirth" id="sel1">
               <option>12</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               </select>
+              <span class="bottom arrow"></span>
               </div>
-              <div class="form-group ">
+              <div class="form-group custom-select-down">
               <select class="form-control dayofbirth" id="sel1">
               <option>12</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
+              
               </select>
+              <span class="bottom arrow"></span>
               </div>
-              <div class="form-group">
+              <div class="form-group custom-select-down">
               <select class="form-control dayofbirth" id="sel1">
               <option>2008</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               </select>
+               <span class="bottom arrow"></span>
               </div>
               </div>
           </div>
@@ -212,29 +223,32 @@
     <div class="add-top-2">
               <label for="sel1" class="add-bottom-2">Date of death</label>
               <div class="d-flex">
-              <div class="form-group">
+              <div class="form-group custom-select-down">
               <select class="form-control dayofbirth" id="sel1">
               <option>12</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               </select>
+              <span class="bottom arrow"></span>
               </div>
-              <div class="form-group ">
+              <div class="form-group custom-select-down">
               <select class="form-control dayofbirth" id="sel1">
               <option>12</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               </select>
+              <span class="bottom arrow"></span>
               </div>
-              <div class="form-group">
+              <div class="form-group custom-select-down">
               <select class="form-control dayofbirth" id="sel1">
               <option>2019</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               </select>
+              <span class="bottom arrow"></span>
               </div>
               </div>
           </div>
@@ -756,40 +770,37 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col">
-      <div class="col">
-         <div class="form-group d-flex vertical-align">
-        <label for="sel1" class="state">Select list:</label>
-        <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        </select>
+  <div class="row select-province">
+    <div class="d-flex full-width">
+      <div class="col d-flex flex-content-center">
+        <div class="form-group d-flex vertical-align ">
+          <label for="sel1" class="state text-uppercase">State</label>
+          <select class="form-control" id="sel1">
+            <option>Nova Scotia</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <span class="bottom"></span>
+        </div>
+
+        <div class="form-group d-flex vertical-align ">
+        <label for="sel1" class="city text-uppercase">City</label>
+          <select class="form-control" id="sel1">
+            <option>Nova Scotia</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <span class="bottom"></span>
+        </div>
       </div>
-      </div>
-      <div class="col">
-         <div class="form-group d-flex vertical-align">
-        <label for="sel1" class="city">Select list:</label>
-        <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        </select>
-      </div>
-      </div>
-        
-       
-      
-      
       
     </div>
   </div>
 
   
-  <div class="row">
+  <div class="row add-top-10">
     <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
   </div>
 
@@ -803,6 +814,26 @@
       </ol>
     </div>
   </div>
+
+  <div class="row login-form">
+    <form class="form-login animate" >
+    <div class="col">
+      <h1 class="title text-center add-bottom-5">Member Login</h1>
+      <label for="uname" class="fs_14 pad-bottom text-capitalize">Username</label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw" class="fs_14 pad-bottom add-top-25 text-capitalize"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="button" class="btn btn-default add-top-25 full-width fs_18 fw-bold">Login</button>
+
+      <p class="fw-bold add-top-45 text-center">Don't have an account? <span>Sign Up</span></p>
+      
+    </div>
+  </form>
+
+  </div>
+  
 
   
 

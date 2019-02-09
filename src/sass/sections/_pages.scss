@@ -1,3 +1,13 @@
+%select-dropdown {
+	/* remove the original arrow */
+	select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	/* no standardized syntax available, no ie-friendly solution available */
+	}
+}
+
 .form-group {
 	.insurance { width: 140px; }
 	.countrybirth { width: 260px; }
@@ -5,7 +15,7 @@
 	
 	.state,
 	 .city {
-	 	width: 20%;
+	 	padding-right: 20px;
 	 }
 }
 .death { width: 20%; }
@@ -201,4 +211,106 @@
 	.btn { 
 		margin: 10px;
 	}
+}
+.select-province {
+	label { color: #a2adaf; }
+	select {
+		height: 50px;
+		width: 214px;
+		border-radius: 50px;
+		padding-left: 21px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		+.bottom {     
+			display: inline-block;
+			width: 4em;
+			height: 4em;
+			position: relative;
+			left: -32px;
+			top: 14px;
+			pointer-events: none;
+			&:after {
+				content: '';
+				display: inline-block;
+				margin-top: 0.6em;
+				width: 0.6em;
+				height: 0.6em;
+				border-top: 0.1em solid #dadede;
+				border-right: 0.1em solid #dadede;
+				-moz-transform: rotate(135deg);
+				-webkit-transform: rotate(135deg);
+				transform: rotate(135deg);
+			}
+		}
+	}
+	
+}
+
+.custom-select-down {
+	position: relative;
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		border-radius: 3px;
+
+		+.bottom {     
+			display: inline-block;
+			width: 4em;
+			height: 4em;
+			position: absolute;
+			right: -38px;
+			top: 40px;
+			pointer-events: none;
+			&:after {
+				content: '';
+				display: inline-block;
+				margin-top: 0.6em;
+				width: 0.6em;
+				height: 0.6em;
+				border-top: 0.1em solid #dadede;
+				border-right: 0.1em solid #dadede;
+				-moz-transform: rotate(135deg);
+				-webkit-transform: rotate(135deg);
+				transform: rotate(135deg);
+			}
+			&.arrow { 
+				right: -45px;
+				top: 4px;
+			}
+			&.name-arrow {
+				right: -19px;
+				top: 4px;
+			}
+		}
+	}
+}
+
+.login-form {
+	input[type=text], input[type=password] {
+		width: 100%;
+		padding: 8px 0px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 0px solid #ccc;
+		box-sizing: border-box;
+		background: transparent;
+		border-bottom: 1px solid #dae2e4;
+		font-size: 17px;
+		&:focus {
+			outline: none;
+		}
+	}
+	.form-login { 
+		background: $white-1;
+		width: 420px;
+		margin: 0 auto;
+		.col { padding: 60px; }
+	 }
+	.title { color: #262829; }
+	label { color: #99a0a1; }
+	p { color: #64696a;
+		span { color: #00a6ff; cursor: pointer; }
+	 }
 }

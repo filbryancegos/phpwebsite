@@ -20,14 +20,17 @@ $rubik: 'Rubik', sans-serif;
 }
 
 .btn {
-	&.btn-2 {
+	&.btn-2,
+	&.btn-default {
 		border-radius: 50px;
 		background: $white-1;
 		padding: 10px 50px;
+		color: #fff;
+		font-size: 18px;
 		&:hover {
 			background:#4fb9de;
 			color: #fff;
-			font-size: 16px;
+			
 		}
 	}
 	&.btn-3,
@@ -41,5 +44,10 @@ $rubik: 'Rubik', sans-serif;
 			background: #4fb9de;
 			color: $white-1;
 		}
+	}
+	&.btn-default {
+		background: #4fb9de;
+		padding: 13px 50px;
+		border-radius: 5px;
 	}
 }
