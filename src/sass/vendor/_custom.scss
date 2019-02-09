@@ -18,3 +18,36 @@ $rubik: 'Rubik', sans-serif;
 .rounded {
 	border-radius: 3rem !important;
 }
+
+.btn {
+	&.btn-2,
+	&.btn-default {
+		border-radius: 50px;
+		background: $white-1;
+		padding: 10px 50px;
+		color: #fff;
+		font-size: 18px;
+		&:hover {
+			background:#4fb9de;
+			color: #fff;
+			
+		}
+	}
+	&.btn-3,
+	&.btn-4 {
+		padding: 13px 61px;
+		background: $white-1;
+		border-radius: 5px;
+		box-shadow: 1px 1px 1px #888888b3;
+
+		&.active {
+			background: #4fb9de;
+			color: $white-1;
+		}
+	}
+	&.btn-default {
+		background: #4fb9de;
+		padding: 13px 50px;
+		border-radius: 5px;
+	}
+}

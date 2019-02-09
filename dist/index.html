@@ -88,25 +88,30 @@
         </div>
       </nav>
     </header>
-    <div class="row">
+
+    <div class="row add-top-10">
       <div class="col-sm-12 text-center">
-       <p class="fs_14 add-bottom-2">Questions 2/2</p>
+       <p class="fs_14 add-bottom-25">Questions 2/2</p>
        <h1>Personal Information</h1>
      </div>
    </div>
 
-   <div class="row add-top-6 add-bottom-6">
+   <div class="row add-top-7 add-bottom-85">
     <div class="col-sm-12 d-flex flex-content-center">
       <form class="form-inline" role="form">
-        <select class="form-control" id="exampleFormControlSelect1">
+        <div class="custom-select-down">
+          <select class="form-control conrolname add-right-25" id="exampleFormControlSelect1">
           <option>Mr</option>
           <option>Ms</option>
           <option>Mrs</option>
           <option>Mr</option>
           <option>Ms</option>
         </select>
-        <input type="text" class="form-control add-left add-right" id="fname" placeholder="First Name">
-        <input type="text" class="form-control" id="lname" placeholder="Last Name">    
+          <span class="bottom name-arrow"></span>
+        </div>
+        
+        <input type="text" class="form-control" id="fname" placeholder="First Name">
+        <input type="text" class="form-control add-left-25" id="lname" placeholder="Last Name">    
       </form>
     </div>
   </div>
@@ -115,16 +120,18 @@
 
   <div class="row add-top-8">
     <div class="col text-center">
-      <p class="add-bottom-2">Is the full name of birth different from the name abobe</p>
+      <p class="add-bottom-35">Is the full name of birth different from the name abobe</p>
       <form>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio1">
-            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+          <label class="container fw-bold">Yes
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
           </label>
         </div>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio2">
-            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" checked>No
+          <label class="container fw_bold">No
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
           </label>
         </div>  
       </form>
@@ -134,13 +141,15 @@
       <p class="add-bottom-2">Is the full name of birth different from the name abobe</p>
       <form>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio1">
-            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+          <label class="container fw_bold">No
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
           </label>
         </div>
         <div class="form-check-inline">
-          <label class="form-check-label" for="radio2">
-            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" checked>No
+       <label class="container fw_bold">No
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
           </label>
         </div>  
       </form>
@@ -148,46 +157,709 @@
   </div>
 
   <div class="row add-top-8 add-bottom-8">
-    <div class="col"><button type="button" class="btn btn-primary">Next</button></div>
+    <div class="col"><button type="button" class="btn btn-1">Next<i class="fas fa-long-arrow-right"></i></button></div>
   </div>
-</section>
-<div class="col"><button type="button" class="btn btn-1">Next</button></div>
-</div>
-</div>
 
-<div class="container-fluid add-top-3">
   <div class="row">
     <div class="col">  
       <div class="form-group">
         <label for="usr" class="fs_14 add-bottom-2">Insurance Number:</label>
-        <input type="text" class="form-control" id="insurance">
+        <input type="text" class="form-control insurance" id="insurance">
       </div>
 
-      <div class="d-flex">
-        <div class="form-group">
-          <label for="usr" class="fs_14 add-bottom-2">Date of Birth:</label>
-          <select class="form-control" id="datebirth">
-            <option>Select a Country</option>
-            <option>Ms</option>
-            <option>Mrs</option>
-            <option>Mr</option>
-            <option>Ms</option>
-          </select>
-        </div>
+    <div class="d-flex add-top-3">
+        <div class="form-group custom-select-down">
+          <label for="sel1" class="add-bottom-2">Country of Birth</label>
+          <select class="form-control countrybirth" id="sel1">
+          <option>Select Country</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
 
-        <div class="form-group">
-          <label for="usr">Country of Birth:</label>
-          <select class="form-control" id="countrybirth">
-            <option>Select a Country</option>
-            <option>Ms</option>
-            <option>Mrs</option>
-            <option>Mr</option>
-            <option>Ms</option>
           </select>
+          <span class="bottom"></span>
+
+        </div>  
+
+        <div class="add-left-2">
+              <label for="sel1" class="add-bottom-2">Date of Birth</label>
+              <div class="d-flex">
+              <div class="form-group custom-select-down">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              <span class="bottom arrow"></span>
+              </div>
+              <div class="form-group custom-select-down">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              
+              </select>
+              <span class="bottom arrow"></span>
+              </div>
+              <div class="form-group custom-select-down">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>2008</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+               <span class="bottom arrow"></span>
+              </div>
+              </div>
+          </div>
+    </div>
+
+    <label for="sel1" class="add-bottom-2 add-top">Sex</label>
+    <div class="form-group add-bottom">
+        <div class="form-check-inline">
+          <label class="container fw_bold">Male
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
         </div>
-      </div>
+        <div class="form-check-inline">
+       <label class="container fw_bold">Female
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div>  
+    </div>
+
+    <hr>
+
+    <div class="add-top-2">
+              <label for="sel1" class="add-bottom-2">Date of death</label>
+              <div class="d-flex">
+              <div class="form-group custom-select-down">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              <span class="bottom arrow"></span>
+              </div>
+              <div class="form-group custom-select-down">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>12</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              <span class="bottom arrow"></span>
+              </div>
+              <div class="form-group custom-select-down">
+              <select class="form-control dayofbirth" id="sel1">
+              <option>2019</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              </select>
+              <span class="bottom arrow"></span>
+              </div>
+              </div>
+          </div>
+
+
+    <label for="sel1" class="add-bottom-2 add-top-3">Maritial Status</label>
+
+    <div class="form-group add-bottom">
+        <div class="form-check-inline">
+          <label class="container fw_bold">Single
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div>
+        <div class="form-check-inline">
+       <label class="container fw_bold">Married
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+        <div class="form-check-inline">
+       <label class="container fw_bold">Separated
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+    </div>
+
+    <div class="form-group add-bottom">
+        <div class="form-check-inline">
+          <label class="container fw_bold">Common law
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div>
+        <div class="form-check-inline">
+       <label class="container fw_bold">Divorce
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+        <div class="form-check-inline">
+       <label class="container fw_bold">Surviving
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark "></span>
+          </label>
+        </div> 
+    </div>
+      
     </div>
   </div>
+
+  <div class="row my-task task-documents add-bottom-3">
+    <div class="col">
+      <h2 class="title">My Task and Documents</h2>
+    </div>
+    <div class="col text-right">
+      <button class="btn btn-default dropdown-toggle fs_12" type="button" id="menu1" data-toggle="dropdown">Last 7 days
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+      </ul>
+  </div>
+    </div>
+  
+
+  <div class="row my-task task-documents">
+      <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item d-flex">
+          <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end"><button type="button" class="btn btn-success">Completed</button></div>
+        </li>
+        
+         <li class="list-group-item d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Basic Forms</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-arrow-to-bottom"></i></div>
+        
+
+      </li>
+
+      <li class="list-group-item d-flex">
+          <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end"><button type="button" class="btn btn-success">Completed</button></div>
+        </li>
+
+      
+         <li class="list-group-item d-flex delayed">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <button type="button" class="btn btn-danger">Delayed</button></div>
+        
+
+      </li>
+
+      <li class="list-group-item d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Insurance Forms</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-arrow-to-bottom"></i></div>
+        
+
+      </li>
+
+      <li class="list-group-item d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Other Forms</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-arrow-to-bottom"></i></div>
+        
+
+      </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row my-task task add-bottom-3 add-top-3">
+    
+      <div class="col">
+        <h2 class="title">My Task </h2>
+      </div>
+      <div class="col text-right">
+        <button class="btn btn-default dropdown-toggle fs_12" type="button" id="menu1" data-toggle="dropdown">Last 7 days
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+        </ul>
+      </div>
+
+  </div>
+
+  <div class="row my-task task">
+    
+    <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item d-flex">
+          <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end"><button type="button" class="btn btn-success">Completed</button></div>
+        </li>
+        
+        
+
+      <li class="list-group-item d-flex">
+          <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end"><button type="button" class="btn btn-success">Completed</button></div>
+        </li>
+
+      
+         <li class="list-group-item d-flex delayed">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <button type="button" class="btn btn-danger">Delayed</button></div>
+        
+
+      </li>
+
+      <li class="list-group-item d-flex delayed">
+        <div class="col d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+          
+        
+
+      </li>
+
+      <li class="list-group-item d-flex">
+          <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end"><button type="button" class="btn btn-success">Completed</button></div>
+        </li>
+        
+        
+
+      <li class="list-group-item d-flex">
+          <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+        <div class="col-sm-6 text-right d-flex vertical-align flex-content-end"><button type="button" class="btn btn-success">Completed</button></div>
+        </li>
+
+        <li class="list-group-item d-flex delayed">
+        <div class="col d-flex vertical-align no-pad-left">
+          <i class="fas fa-check-circle pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Cras justo odio</p>
+          <small class="fs_11">Cras justo odio <span>01/20/19</span></small>
+          </div>
+          </div>
+          
+        
+
+      </li>
+      
+      </ul>
+    </div>
+  </div>
+
+  <div class="row my-task task-succesfull add-top-7 add-bottom-7">
+    <div class="col">
+      <h2 class="title text-center">You successfully downloaded forms check other items that might you need!</h2>
+    </div>
+  </div>
+
+  <div class="row my-task task-succesfull ">
+    <div class="col">
+      <ul class="list-group">
+      
+      <li class="list-group-item d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Basic Forms<span class="counter"> (9)</span></p>
+          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-arrow-to-bottom"></i></div>
+        
+
+      </li>
+
+      <li class="list-group-item d-flex disabled">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 ">Insurance and Beneficiary</p>
+          <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <p class="fs_15 sub-p">Answers Questions</p>
+          </div>
+        
+
+      </li>
+      <li class="list-group-item d-flex disabled">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 ">Insurance and Beneficiary</p>
+          <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <p class="fs_15  sub-p">Answers Questions</p>
+          </div>
+        
+
+      </li>
+    </ul>
+
+    </div>
+    
+  </div>
+
+  <div class="row my-task task-succesfull add-top-7 add-bottom-7">
+    <div class="col">
+      <h2 class="title text-center">You successfully downloaded forms check other items that might you need!</h2>
+    </div>
+  </div>
+
+  <div class="row my-task task-succesfull ">
+    <div class="col">
+      <ul class="list-group">
+      
+      <li class="list-group-item d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 fw-bold">Basic Forms<span class="counter"> (9)</span></p>
+          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-arrow-to-bottom"></i></div>
+        
+
+      </li>
+
+      <li class="list-group-item sub-file-downloads d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25 fs_20"></i>
+          <div>
+          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet.pdf</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-eye-slash add-right-15"></i><i class="fas fa-eye-slash"></i></div>
+        
+
+      </li>
+
+      <li class="list-group-item sub-file-downloads d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25 fs_20"></i>
+          <div>
+          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet.pdf</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-eye-slash add-right-15"></i><i class="fas fa-eye-slash"></i></div>
+        
+
+      </li>
+
+      <li class="list-group-item sub-file-downloads d-flex">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25 fs_20"></i>
+          <div>
+          <p class="fs_12 fw-bold sub-p">Lorem ipsum sitamet Lorem ipsum sitamet.pdf</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <i class="fas fa-eye-slash add-right-15"></i><i class="fas fa-eye-slash"></i></div>
+        
+
+      </li>
+
+      <li class="list-group-item d-flex disabled">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 ">Insurance and Beneficiary</p>
+          <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <p class="fs_15 sub-p">Answers Questions</p>
+          </div>
+        
+
+      </li>
+      <li class="list-group-item d-flex disabled">
+        <div class="col-sm-6 d-flex vertical-align no-pad-left">
+          <i class="fas fa-file-pdf pad-right-25"></i>
+          <div>
+          <p class="fs_16 ">Insurance and Beneficiary</p>
+          <p class="fs_15  sub-p">Lorem ipsum sitamet Lorem ipsum sitamet</p>
+          </div>
+          </div>
+          <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
+            <p class="fs_15  sub-p">Answers Questions</p>
+          </div>
+        
+
+      </li>
+    </ul>
+
+    </div>
+    
+  </div>
+
+  <div class="row template-survery add-top-10 add-bottom-10">
+    <div class="col-sm-12 text-center add-bottom-75">
+      <p class="fs_14 top-title add-bottom">lorem ipsum sit amet</p>
+      <h1 class="title">Multiple options template survey</h1>
+    </div>
+
+    <div class="col survey-button text-center">
+      <button type="button" class="btn btn-2">Selection 1</button>
+      <button type="button" class="btn btn-2">Selection 1</button>
+      <button type="button" class="btn btn-2">Selection 1</button>
+      <button type="button" class="btn btn-2">Selection 1</button>
+      <button type="button" class="btn btn-2">Selection 1</button>
+      
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+  </div>
+
+  <div class="row add-top-5 add-bottom-4">
+    <div class="col">
+      <ol class="dots-indicators d-flex flex-content-center">
+        <li class="active"></li>
+        <li ></li>
+        <li ></li>
+        <li ></li>
+      </ol>
+    </div>
+  </div>
+
+
+  <div class="row template-survery add-top-10 add-bottom-10">
+    <div class="col-sm-12 text-center add-bottom-75">
+      <p class="fs_14 top-title add-bottom">Citizen is important to verify the loss one identity</p>
+      <h1 class="title">Is the Deceased one has Insurance</h1>
+    </div>
+  </div>
+
+  <div class="row add-bottom-10 insurance-button">
+    <div class="col d-flex flex-content-center">
+      <button type="button" class="btn btn-3">No</button>
+      <button type="button" class="btn btn-4 active">Yes</button>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+  </div>
+
+  <div class="row add-top-5 add-bottom-4">
+    <div class="col">
+      <ol class="dots-indicators d-flex flex-content-center">
+        <li class="active"></li>
+        <li ></li>
+        <li ></li>
+        <li ></li>
+      </ol>
+    </div>
+  </div>
+
+
+  <div class="row template-survery add-top-10 add-bottom-10">
+    <div class="col-sm-12 text-center add-bottom-75">
+      <p class="fs_14 top-title add-bottom">Select country of the deceased one</p>
+      <h1 class="title">What country did the deceased live in?</h1>
+    </div>
+  </div>
+
+  <div class="row add-bottom-10 insurance-button">
+    <div class="col d-flex flex-content-center">
+      <button type="button" class="btn btn-3">USA</button>
+      <button type="button" class="btn btn-4 active">Canada</button>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+  </div>
+
+  <div class="row add-top-5 add-bottom-4">
+    <div class="col">
+      <ol class="dots-indicators d-flex flex-content-center">
+        <li class="active"></li>
+        <li ></li>
+        <li ></li>
+        <li ></li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row template-survery add-top-10 add-bottom-10">
+    <div class="col-sm-12 text-center add-bottom-75">
+      <p class="fs_14 top-title add-bottom">What state/province did the deceased live in?</p>
+      <h1 class="title">Select province the decease live in?</h1>
+    </div>
+  </div>
+
+  <div class="row select-province">
+    <div class="d-flex full-width">
+      <div class="col d-flex flex-content-center">
+        <div class="form-group d-flex vertical-align ">
+          <label for="sel1" class="state text-uppercase">State</label>
+          <select class="form-control" id="sel1">
+            <option>Nova Scotia</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <span class="bottom"></span>
+        </div>
+
+        <div class="form-group d-flex vertical-align ">
+        <label for="sel1" class="city text-uppercase">City</label>
+          <select class="form-control" id="sel1">
+            <option>Nova Scotia</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <span class="bottom"></span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  <div class="row add-top-10">
+    <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
+  </div>
+
+  <div class="row add-top-5 add-bottom-4">
+    <div class="col">
+      <ol class="dots-indicators d-flex flex-content-center">
+        <li class="active"></li>
+        <li ></li>
+        <li ></li>
+        <li ></li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row login-form">
+    <form class="form-login animate" >
+    <div class="col">
+      <h1 class="title text-center add-bottom-5">Member Login</h1>
+      <label for="uname" class="fs_14 pad-bottom text-capitalize">Username</label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw" class="fs_14 pad-bottom add-top-25 text-capitalize"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="button" class="btn btn-default add-top-25 full-width fs_18 fw-bold">Login</button>
+
+      <p class="fw-bold add-top-45 text-center">Don't have an account? <span>Sign Up</span></p>
+      
+    </div>
+  </form>
+
+  </div>
+  
+
+  
+
+
+
+</section>
+
+</div>
+</div>
+
+<div class="container-fluid add-top-3">
+  
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
