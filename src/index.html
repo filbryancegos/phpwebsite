@@ -8,7 +8,53 @@
   <link href="css/main.css" rel="stylesheet">
   <body>
     <div class="container-fluid p-0">
-
+      <section class="sidebar">
+      <aside>
+        <div class="sidebar-header">
+          <div class="header-logo">
+            <img src="images/logo.png" class="img-fluid " alt="Responsive image">
+          </div>            
+          <div class="header-chart full-width mb-5">
+            <div class="donut-chart-block block"> 
+              <div class="donut-chart">
+                <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
+                <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
+                <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
+                <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+                <p class="center-date d-flex justify-content-center align-items-center">
+                  <span class="first-font-color">10<span><sup>%</sup></span></span>
+                  <span class="scnd-font-color">1/12</span>    
+                </p>        
+              </div>
+            </div>
+          </div>
+          <div class="header-info">
+            <div class="info info-basic d-flex justify-content-between align-items-center text-primary">
+              <i class="fas fa-user-alt"></i>
+              <p>Basic information</p>
+              <span>12</span>
+            </div>
+            <div class="info info-full d-flex justify-content-between align-items-center text-muted"">
+              <i class="fas fa-clipboard-list"></i>
+              <p >Decease full information</p>
+              <span>12</span>
+            </div>
+            <div class="info info-others d-flex justify-content-start align-items-center text-muted">
+              <i class="fas fa-bookmark"></i>
+              <p >Other information</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-footer">
+         <div class="footer-info">Sending healing
+         </div>          
+         <div class="footer-logo d-flex align-items-center full-width justify-content-start">
+          <img src="images/logo.png" class="img-fluid " alt="Footer logo">
+          <span>Uponloss</span>
+        </div>
+      </aside>
+    </section>
+    <div class="main-boldy">
       <header>
         <header>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,14 +88,14 @@
       <div class="main-section">
         <section>
 
-          <div class="row add-top-10">
+          <div class="row no-margin add-top-10">
             <div class="col-sm-12 text-center">
               <p class="fs_14 add-bottom-25">Questions 2/2</p>
               <h1>Personal Information</h1>
             </div>
           </div>
 
-          <div class="row add-top-8">
+          <div class="row no-margin add-top-8">
             <div class="col text-center">
               <p class="add-bottom-35">Is the full name of birth different from the name abobe</p>
               <form>
@@ -91,11 +137,11 @@
 
         <section>
 
-          <div class="row add-top-8 add-bottom-8">
-            <div class="col"><button type="button" class="btn btn-1">Next<i class="fas fa-long-arrow-right"></i></button></div>
+          <div class="row no-margin add-top-8 add-bottom-8">
+            <div class="col"><button type="button" class="btn btn-1">Next<i class="fas fa-long-arrow no-margin-right"></i></button></div>
           </div>
 
-          <div class="row">
+          <div class="row no-margin">
             <div class="col">
               <div class="form-group">
                 <label for="usr" class="fs_14 add-bottom-2">Insurance Number:</label>
@@ -126,7 +172,7 @@
                         <option>3</option>
                         <option>4</option>
                       </select>
-                      <span class="bottom arrow"></span>
+                      <span class="bottom arrow no-margin"></span>
                     </div>
                     <div class="form-group custom-select-down">
                       <select class="form-control dayofbirth" id="sel1">
@@ -136,7 +182,7 @@
                         <option>4</option>
 
                       </select>
-                      <span class="bottom arrow"></span>
+                      <span class="bottom arrow no-margin"></span>
                     </div>
                     <div class="form-group custom-select-down">
                       <select class="form-control dayofbirth" id="sel1">
@@ -145,7 +191,7 @@
                         <option>3</option>
                         <option>4</option>
                       </select>
-                      <span class="bottom arrow"></span>
+                      <span class="bottom arrow no-margin"></span>
                     </div>
                   </div>
                 </div>
@@ -179,7 +225,7 @@
                       <option>3</option>
                       <option>4</option>
                     </select>
-                    <span class="bottom arrow"></span>
+                    <span class="bottom arrow no-margin"></span>
                   </div>
                   <div class="form-group custom-select-down">
                     <select class="form-control dayofbirth" id="sel1">
@@ -188,7 +234,7 @@
                       <option>3</option>
                       <option>4</option>
                     </select>
-                    <span class="bottom arrow"></span>
+                    <span class="bottom arrow no-margin"></span>
                   </div>
                   <div class="form-group custom-select-down">
                     <select class="form-control dayofbirth" id="sel1">
@@ -197,7 +243,7 @@
                       <option>3</option>
                       <option>4</option>
                     </select>
-                    <span class="bottom arrow"></span>
+                    <span class="bottom arrow no-margin"></span>
                   </div>
                 </div>
               </div>
@@ -253,7 +299,7 @@
         </section>
 
         <section>
-          <div class="row my-task task-documents add-bottom-3">
+          <div class="row no-margin my-task task-documents add-bottom-3">
             <div class="col">
               <h2 class="title">My Task and Documents</h2>
             </div>
@@ -272,7 +318,7 @@
         </section>
 
         <section>
-          <div class="row my-task task-documents">
+          <div class="row no-margin my-task task-documents">
             <div class="col">
               <ul class="list-group">
                 <li class="list-group-item d-flex">
@@ -294,7 +340,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow-to-bottom"></i></div>
+                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
 
 
                 </li>
@@ -328,7 +374,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow-to-bottom"></i></div>
+                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
                 </li>
 
                 <li class="list-group-item d-flex">
@@ -339,7 +385,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow-to-bottom"></i></div>
+                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
                 </li>
               </ul>
             </div>
@@ -347,7 +393,7 @@
         </section>
 
         <section>
-          <div class="row my-task task add-bottom-3 add-top-3">
+          <div class="row no-margin my-task task add-bottom-3 add-top-3">
             <div class="col">
               <h2 class="title">My Task </h2>
             </div>
@@ -366,7 +412,7 @@
         </section>
 
         <section>
-          <div class="row my-task task">
+          <div class="row no-margin my-task task">
 
             <div class="col">
               <ul class="list-group">
@@ -465,13 +511,13 @@
         </section>
 
         <section>
-          <div class="row my-task task-succesfull add-top-7 add-bottom-7">
+          <div class="row no-margin my-task task-succesfull add-top-7 add-bottom-7">
             <div class="col">
               <h2 class="title text-center">You successfully downloaded forms check other items that might you need!</h2>
             </div>
           </div>
 
-          <div class="row my-task task-succesfull ">
+          <div class="row no-margin my-task task-succesfull ">
             <div class="col">
               <ul class="list-group">
 
@@ -484,7 +530,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow-to-bottom"></i></div>
+                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
 
 
                   </li>
@@ -525,7 +571,7 @@
         </section>
 
         <section>
-          <div class="row my-task task-succesfull add-top-7 add-bottom-7">
+          <div class="row no-margin my-task task-succesfull add-top-7 add-bottom-7">
             <div class="col">
               <h2 class="title text-center">You successfully downloaded forms check other items that might you need!</h2>
             </div>
@@ -533,7 +579,7 @@
         </section>
 
         <section>
-          <div class="row my-task task-succesfull ">
+          <div class="row no-margin my-task task-succesfull ">
             <div class="col">
               <ul class="list-group">
 
@@ -546,7 +592,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 text-right d-flex vertical-align flex-content-end">
-                    <i class="fas fa-arrow-to-bottom"></i></div>
+                    <i class="fas fa-arrow no-margin-to-bottom"></i></div>
 
 
                   </li>
@@ -626,7 +672,7 @@
         </section>
 
         <section>
-          <div class="row template-survery add-top-10 add-bottom-10">
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
             <div class="col-sm-12 text-center add-bottom-75">
               <p class="fs_14 top-title add-bottom">lorem ipsum sit amet</p>
               <h1 class="title">Multiple options template survey</h1>
@@ -643,13 +689,13 @@
 
           </div>
 
-          <div class="row">
+          <div class="row no-margin">
             <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
           </div>
         </section>
 
         <section>
-          <div class="row add-top-5 add-bottom-4">
+          <div class="row no-margin add-top-5 add-bottom-4">
             <div class="col">
               <ol class="dots-indicators d-flex flex-content-center">
                 <li class="active"></li>
@@ -661,25 +707,25 @@
           </div>
 
 
-          <div class="row template-survery add-top-10 add-bottom-10">
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
             <div class="col-sm-12 text-center add-bottom-75">
               <p class="fs_14 top-title add-bottom">Citizen is important to verify the loss one identity</p>
               <h1 class="title">Is the Deceased one has Insurance</h1>
             </div>
           </div>
 
-          <div class="row add-bottom-10 insurance-button">
+          <div class="row no-margin add-bottom-10 insurance-button">
             <div class="col d-flex flex-content-center">
               <button type="button" class="btn btn-3">No</button>
               <button type="button" class="btn btn-4 active">Yes</button>
             </div>
 
           </div>
-          <div class="row">
+          <div class="row no-margin">
             <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
           </div>
 
-          <div class="row add-top-5 add-bottom-4">
+          <div class="row no-margin add-top-5 add-bottom-4">
             <div class="col">
               <ol class="dots-indicators d-flex flex-content-center">
                 <li class="active"></li>
@@ -692,25 +738,25 @@
         </section>
 
         <section>
-          <div class="row template-survery add-top-10 add-bottom-10">
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
             <div class="col-sm-12 text-center add-bottom-75">
               <p class="fs_14 top-title add-bottom">Select country of the deceased one</p>
               <h1 class="title">What country did the deceased live in?</h1>
             </div>
           </div>
 
-          <div class="row add-bottom-10 insurance-button">
+          <div class="row no-margin add-bottom-10 insurance-button">
             <div class="col d-flex flex-content-center">
               <button type="button" class="btn btn-3">USA</button>
               <button type="button" class="btn btn-4 active">Canada</button>
             </div>
 
           </div>
-          <div class="row">
+          <div class="row no-margin">
             <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
           </div>
 
-          <div class="row add-top-5 add-bottom-4">
+          <div class="row no-margin add-top-5 add-bottom-4">
             <div class="col">
               <ol class="dots-indicators d-flex flex-content-center">
                 <li class="active"></li>
@@ -724,14 +770,14 @@
         </section>
 
         <section>
-          <div class="row template-survery add-top-10 add-bottom-10">
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
             <div class="col-sm-12 text-center add-bottom-75">
               <p class="fs_14 top-title add-bottom">What state/province did the deceased live in?</p>
               <h1 class="title">Select province the decease live in?</h1>
             </div>
           </div>
 
-          <div class="row select-province">
+          <div class="row no-margin select-province">
             <div class="d-flex full-width">
               <div class="col d-flex flex-content-center">
                 <div class="form-group d-flex vertical-align ">
@@ -761,11 +807,11 @@
           </div>
 
 
-          <div class="row add-top-10">
+          <div class="row no-margin add-top-10">
             <div class="col text-center"><button type="button" class="btn btn-1">Next</button></div>
           </div>
 
-          <div class="row add-top-5 add-bottom-4">
+          <div class="row no-margin add-top-5 add-bottom-4">
             <div class="col">
               <ol class="dots-indicators d-flex flex-content-center">
                 <li class="active"></li>
@@ -778,7 +824,7 @@
         </section>
 
         <section>
-          <div class="row login-form">
+          <div class="row no-margin login-form">
             <form class="form-login animate" >
               <div class="col">
                 <h1 class="title text-center add-bottom-5">Member Login</h1>
@@ -800,7 +846,7 @@
 
         <section>
           <div class="pricing py-5">
-            <div class="row text-center">
+            <div class="row no-margin text-center">
               <div class="col-lg-12 add-bottom-35">
                 <img src="images/logo.png" class="img-fluid " alt="Responsive image">
               </div>
@@ -810,7 +856,7 @@
               </div>
             </div>
 
-            <div class="row add-top-10">
+            <div class="row no-margin add-top-10">
               <!-- Free Tier -->
               <div class="col-lg-6">
                 <div class="card mb-5 mb-lg-0">
@@ -848,7 +894,7 @@
         </section>
       </div>
     </div>
-
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
