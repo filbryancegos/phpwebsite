@@ -115,6 +115,12 @@
   }
 }
 
+.form-sign {
+    .select-items div:first-child:after {
+        background: transparent;
+    }
+}
+
 
 /*style items (options):*/
 .select-items {
@@ -130,6 +136,7 @@
   opacity: 1;
 
 }
+
 
 
 /*hide the items when the select box is closed:*/

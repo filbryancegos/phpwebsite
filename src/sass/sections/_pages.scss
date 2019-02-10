@@ -242,7 +242,8 @@
 		background: #cee8f1;
 		border-radius: 50px;
 		margin: 3px;
-		&.active { background: #58d1fd; }
+		&.active,
+		&:hover { background: #58d1fd; }
 		&:last-child{
 			width: 43px;
 			margin-left: 15px;
