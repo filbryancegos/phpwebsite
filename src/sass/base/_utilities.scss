@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Author     : Labboss
 */
 
@@ -19,8 +19,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -31,7 +31,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -69,11 +69,11 @@ strong { font-weight: 600; }
 button { border-radius: 0; }
 
 /*Icon*/
-.icon { 
-    cursor: pointer; 
+.icon {
+    cursor: pointer;
     display: inline-block;
     /*line-height: 1;*/
-    outline: none; 
+    outline: none;
 }
 
 /*Letter Spacing*/
@@ -83,12 +83,12 @@ button { border-radius: 0; }
 .letterspacing-15em   { letter-spacing: 0.15em; }
 .letterspacing-25em   { letter-spacing: 0.25em; }
 
-/*Flexbox*/ 
+/*Flexbox*/
 .d-flex {
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
-    display: -webkit-flex;     
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: box;
     display: flex;
 }
@@ -100,39 +100,46 @@ button { border-radius: 0; }
     align-items: center;
 }
 
-.flex-content-end { 
+.vertical-align-end {
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+
+.flex-content-end {
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
 }
 
-.flex-content-start {     
+.flex-content-start {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
 }
 
-.flex-content-center { 
+.flex-content-center {
     -webkit-justify-content: center;
     justify-content: center;
 }
 
-.flex-content-spacebetween { 
+.flex-content-spacebetween {
     -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
-.flex-content-spacearound { 
+.flex-content-spacearound {
     -webkit-justify-content: space-around;
     justify-content: space-around;
 }
 
 .flex-nowrap {
     -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
 }
 
 .flex-wrap {
     -webkit-flex-wrap: wrap;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .fw-bold {
@@ -163,8 +170,8 @@ button { border-radius: 0; }
 .border-double { border-style: double; }
 
 /*Cursor*/
-.clickable, 
-.clickable:focus { 
+.clickable,
+.clickable:focus {
     cursor: pointer;
     outline: none;
     -webkit-user-select: none;  /* Chrome all / Safari all */
