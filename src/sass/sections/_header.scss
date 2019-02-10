@@ -7,3 +7,27 @@
 	}
 
 }
+
+.header-login {
+	.btn.btn-secondary {
+		background-color: #dce0e1;
+		border-color: #dce0e1;
+		padding: 12.5px 24px;
+
+		&:hover { 
+			border-color: #dce0e1;
+			opacity: .8;
+		}
+
+		i, span { color: #7b7d7e; }
+	}	
+
+	.signup {
+		color: #555c60;
+
+		img { margin-bottom: -2.5px; }
+	}
+	.auth-btns .btn {
+		padding: 12.5px 30px 12.5px 20px !important;		
+	}
+}
