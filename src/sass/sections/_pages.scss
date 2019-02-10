@@ -65,7 +65,7 @@
 			padding: 13px 16px;
 			border-radius: 5px;
 			border: none;
-			&:after { top: 15px;}
+			//&:after { top: 15px;}
 		}
 	}
 }
@@ -103,6 +103,7 @@
   width: 25px;
   background-color: #fff;
   border-radius: 50%;
+  transition: .3s;
 }
 
 /* On mouse-over, add a grey background color */
