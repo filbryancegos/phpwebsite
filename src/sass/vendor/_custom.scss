@@ -29,6 +29,9 @@ span { color: #00a6ff; cursor: pointer;}
 	&:hover {
 		opacity: .7;
 	}
+	&:focus {
+		box-shadow: none;
+	}
 	&.btn-transparent {
 		background: transparent;
 		padding: 10px 50px;
