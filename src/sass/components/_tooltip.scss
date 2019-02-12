@@ -1,11 +1,6 @@
 .info-basic-tooltip {
-	display: none;
-
-	@at-root .dots-indicators:hover & {
-		display: block;
-		cursor: pointer;
-	}
-
+	display: block;
+	cursor: pointer;
 	width: 100%;
 	background-color: #373741;
 	flex-direction: column;

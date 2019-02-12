@@ -4,7 +4,17 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var errorHandler = require('gulp-error-handle');
 
+
+
+//catch potential error
+var logError = function(err) {
+  gutil.log(err);
+  this.emit('end');
+};
 
 gulp.task('css', function() {
   return gulp.src('./src/sass/**/*.scss')
@@ -30,6 +40,16 @@ gulp.task('copy', function() {
     .pipe(browserSync.stream())
 });
 
+
+gulp.task('buildJs', function() {
+  return gulp.src('./src/js/*.js')
+    .pipe(errorHandler(logError))
+    .pipe(uglify())
+    .pipe(concat('main.js')) 
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(browserSync.stream())
+});
+
 gulp.task('browserSync', function() {
    browserSync.init({
      server:{
@@ -38,7 +58,8 @@ gulp.task('browserSync', function() {
    })
 });
 
-gulp.task('watch', ['browserSync','css'], function() {
+gulp.task('watch', ['browserSync','css', 'buildJs'], function() {
   gulp.watch('./src/sass/**/*.scss', ['css']); 
+  gulp.watch('./src/js/*.js', ['buildJs']); 
   gulp.watch('./src/*.html', ['copy']);  
 });

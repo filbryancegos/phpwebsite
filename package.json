@@ -25,9 +25,14 @@
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-error-handle": "^1.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-sass": "^3.2.0",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.7.1",
