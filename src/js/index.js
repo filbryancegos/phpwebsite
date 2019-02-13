@@ -1,42 +1,26 @@
-var headerInfo = document.querySelector('.header-info');
-var dotsList = headerInfo.querySelectorAll('.dots-indicators li');
-var dots = Array.from(dotsList);
+var headerInfo = document.querySelectorAll('.header-info');
+var headerInfoList = Array.from(headerInfo);
 
-var tip = document.querySelector('.info-basic-tooltip');
-var show = true;
+headerInfoList.forEach(function(elem) { 
+	
+	var dotsList = elem.querySelectorAll('.dots-indicators li');
+	var dots = Array.from(dotsList); 
 
-function toogleTip(e) {
-	console.log(e.type);
-	if (show) {
-		tip.style.display = 'block';
-		show = false;
-	} else {
-		tip.style.display = 'none';
-		show = true;
+	dots.forEach(function(dot) { dot.addEventListener('click', handleclick); })	
+
+	function handleclick(e) {
+		
+		var parent = e.target.parentNode;
+		var tooltip = parent.querySelector('.info-basic-tooltip');
+		console.log(tooltip)	
+		
+		toggle(tooltip);
 	}
-}
 
-dotsList.forEach(function(items) {
-	items.addEventListener('click' ,toogleTip);
-})
+	var show = function (elem) { elem.style.display = 'block'; };
+	var hide = function (elem) { elem.style.display = 'none'; };
 
-
-function handleclick(e) {
-	// var content = document.querySelector(e.target);
-	var parent = e.target.parentNode;
-	var tooltip = parent.querySelector('.info-basic-tooltip');
-
-	toggle(tooltip);
-
-	console.log(e.target.className);
-}
-
-//dots.forEach(function(dot) { dot.addEventListener('click', handleclick); })
-
-var show = function (elem) { elem.style.display = 'block'; };
-var hide = function (elem) { elem.style.display = 'none'; };
-
-var toggle = function (elem) {
+	var toggle = function (elem) {
 	// If the element is visible, hide it
 	if (window.getComputedStyle(elem).display === 'block') {
 		hide(elem);
@@ -45,3 +29,4 @@ var toggle = function (elem) {
 	// Otherwise, show it
 	show(elem);
 };
+})

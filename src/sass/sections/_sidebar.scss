@@ -6,7 +6,7 @@
 	position: fixed;
 
 	.sidebar-header {
-		max-height: calc(100vh - 180px);
+		max-height: calc(100vh - 220px);
 		overflow: auto;
 
 		.header-logo { padding: 20px 20px 0 20px; }
@@ -16,6 +16,33 @@
 			padding: 0 rem(30px) rem(30px) rem(30px);
 
 			.info {
+
+				.sub-info { 
+					height: 0;
+					opacity:0;
+					transition: all .3s linear;
+					overflow: hidden;
+
+					& > div + div { opacity: .5; }
+					
+				}
+
+				&.info-basic:hover .sub-info { 
+					height: auto;
+					opacity: 1;
+				}  				
+				&.info-basic:hover > div:not(.sub-info),
+				&.info-full:hover,
+				&.info-others:hover p,
+				&.active:not(.sub-info) {
+					background: -webkit-linear-gradient(#26a5cc, #37d637);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					cursor: pointer;
+
+					span { background: transparent; }
+				}
+
 				font-weight: 700;
 
 				&:first-child { margin-bottom: rem(40px); }
@@ -41,10 +68,39 @@
 			}
 
 		}
+
+		&.loggedin {
+			.header-logo img { width: 120px; }
+
+			.header-info {
+
+				.info-basic {
+					p { margin-left: rem(-70px); }
+				}
+
+				.info-full {
+					p { margin-left: rem(-100px); }
+				}
+
+				.info-others {
+					p { margin-left: rem(15px); }
+				}
+
+				.dots-indicators {
+					li { 
+						margin:1px;
+
+						&:last-child { 
+							width: 8px;
+						}
+					}
+				}
+			}
+		}	
 	}	
 
 	.sidebar-footer {
-		height: em(180px);
+		height: em(220px);
 		background-color: $gray-1;
 		padding: 5% 10%; 
 		position: absolute;
@@ -57,7 +113,6 @@
 			flex-direction: column;
 			align-items: center;
 			width: 100%;
-			height: 100%;
 		}
 	}	
 
@@ -66,7 +121,7 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-weight: 700;
-		margin-bottom: em(30px);
+		margin-bottom: em(10px);
 		width: 100%;
 		line-height: 1.3;
 	}
