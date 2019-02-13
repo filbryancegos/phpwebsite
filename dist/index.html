@@ -137,14 +137,14 @@
               </div>
               <div class="sub-info">
                 <div class="sub-info-basic d-flex justify-content-start align-items-center add-top">
-                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i> 
+                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i>
                   <p class="text-muted add-left-2">Basic Forms</p>
                 </div>
                 <div class="sub-info-benef d-flex justify-content-start align-items-center add-top">
-                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i> 
+                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i>
                   <p class="text-muted add-left-2">Insurance and Beneficiary</p>
                 </div><div class="sub-info-other d-flex justify-content-start align-items-center add-top">
-                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i> 
+                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i>
                   <p class="text-muted add-left-2">Others</p>
                 </div>
 
@@ -161,7 +161,7 @@
                 <li></li>
                 <li></li>
                 <div class="info-basic-tooltip pos-absolute" style="display: none;">
-                  <div class="tooltip-container full-width full-height d-flex justify-content-around align-items-center flex-column font-weight-normal" "="">
+                  <div class="tooltip-container full-width full-height d-flex justify-content-around align-items-center flex-column font-weight-normal">
                     <div class="basic-tooltip-title full-width d-flex justify-content-start align-items-center">
                       <span>1</span>
                       <span class="ml-3">Decease Full Name</span>
@@ -967,34 +967,40 @@
                               </div>
 
                               <div class="row no-margin select-province">
-                                <div class="d-flex full-width">
-                                  <div class="col d-flex flex-content-center">
-                                    <div class="form-group d-flex vertical-align ">
-                                      <label for="sel1" class="state text-uppercase">State</label>
-                                      <div class="custom-select-arrow" style="width:214px;">
-                                        <select>
-                                          <option value="0">Select state</option>
-                                          <option value="1">USA</option>
-                                          <option value="0">California</option>
-                                          <option value="1">Sample</option>
+                                <div class="d-flex full-width flex-content-center">
 
-                                        </select>
-                                      </div>
-                                    </div>
+                                    <form id="form-select-province" class="form-select-province" >
+                                        <div class="col d-flex flex-content-center">
+                                            <div class="form-group d-flex vertical-align ">
+                                              <label for="sel1" class="state text-uppercase">State</label>
+                                              <div class="custom-select-arrow" style="width:214px;">
+                                                <select>
+                                                  <option value="0">Select state</option>
+                                                  <option value="1">USA</option>
+                                                  <option value="0">California</option>
+                                                  <option value="1">Sample</option>
 
-                                    <div class="form-group d-flex vertical-align ">
-                                      <label for="sel1" class="city text-uppercase">City</label>
-                                      <div class="custom-select-arrow" style="width:214px;">
-                                        <select>
-                                          <option value="0">Select city</option>
-                                          <option value="1">New york</option>
-                                          <option value="0">California</option>
-                                          <option value="1">Sample</option>
+                                                </select>
+                                              </div>
+                                            </div>
 
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
+                                            <div class="form-group d-flex vertical-align ">
+                                              <label for="sel1" class="city text-uppercase">City</label>
+                                              <div class="custom-select-arrow" style="width:214px;">
+                                                <select>
+                                                  <option value="0">Select city</option>
+                                                  <option value="1">New york</option>
+                                                  <option value="0">California</option>
+                                                  <option value="1">Sample</option>
+
+                                                </select>
+                                              </div>
+                                            </div>
+
+
+                                        </div>
+                                    </form>
+
 
                                 </div>
                               </div>
@@ -1357,21 +1363,28 @@
                                                         </div>
                                                       </div>
 
-                                                      <div class="row no-margin sign-form">
-                                                        <form class="form-sign animate">
+                                                      <div class="row no-margin sign-form sign-form-info">
+                                                          <div class="form">
+
+                                                          </div>
+                                                        <form id="form-sign-info" class="form-sign animate">
                                                           <div class="col">
-                                                            <label for="firstname" class="fs_14 add-top-2 text-capitalize">First Name</label>
-                                                            <input type="text" placeholder="" name="firstname" required="">
+                                                              <div class="form-group">
+                                                                  <label for="firstname" class="fs_14 add-top-2 text-capitalize">First Name</label>
+                                                                  <input type="text" placeholder="" name="firstname" required="" id="firstname">
+                                                              </div>
 
-                                                            <label for="lastname" class="fs_14 add-top-2 text-capitalize">Last Name</label>
-                                                            <input type="text" placeholder="" name="lastname" required="">
+                                                              <div class="form-group">
+                                                                  <label for="lastname" class="fs_14 add-top-2 text-capitalize">Last Name</label>
+                                                                  <input type="text" placeholder="" name="lastname" required="" id="lastname">
+                                                              </div>
 
+                                                              <div class="form-group">
+                                                                  <label for="phonenumb" class="fs_14 add-top-2 text-capitalize">Phone Number</label>
+                                                                  <input type="text" placeholder="" name="phonenum" required="" id="phonenum">
+                                                              </div>
 
-
-                                                            <label for="phonenumb" class="fs_14 add-top-2 text-capitalize">Phone Number</label>
-                                                            <input type="text" placeholder="" name="phonenum" required="">
-
-                                                            <button type="button" class="btn btn-default add-top-25 full-width fs_18 ">Next <i class="fas icon  fa-arrow-right pad-left-15"></i></button>
+                                                            <button type="button" class="btn btn-default add-top-25 full-width fs_18 " id="submitforminfo">Next <i class="fas icon  fa-arrow-right pad-left-15"></i></button>
 
                                                             <p class="add-top-45 text-center">Already have an account? <span class="blue-1">Sign in</span></p>
 
@@ -1394,7 +1407,7 @@
                                                       </div>
 
                                                       <div class="row no-margin sign-form">
-                                                        <form class="form-sign animate">
+                                                        <form id="form-country" class="form-sign animate">
                                                           <div class="col">
                                                             <div class="form-group custom-select-down">
                                                               <label for="sel1" class="state">Country</label>
@@ -1426,8 +1439,6 @@
                                                             </div>
 
 
-
-
                                                             <button type="button" class="btn btn-default add-top-25 full-width fs_18 ">Next<i class="fas icon  fa-arrow-right pad-left-15"></i></button>
 
                                                             <p class=" add-top-45 text-center">Already have an account? <span class="blue-1">Sign in</span></p>
@@ -1451,23 +1462,31 @@
                                                       </div>
 
                                                       <div class="row no-margin sign-form">
-                                                        <form class="form-sign animate">
-                                                          <div class="col">
-                                                            <label for="email" class="fs_14 pad-top-2 text-capitalize">Email Address</label>
-                                                            <input type="text" placeholder="" name="email" required="">
 
-                                                            <label for="passowrd" class="fs_14 pad-top-2 text-capitalize">Password</label>
-                                                            <input type="password" placeholder="" name="passowrd" required="">
+                                                          <div class="col sign-wrapper">
+                                                              <div class="form">
 
-                                                            <label for="confirmpassword" class="fs_14 pad-top-2 text-capitalize">Confirm Password</label>
-                                                            <input type="password" placeholder="" name="confirmpassword" required="">
+                                                              </div>
+                                                              <form id="form-sign-in" class="form-sign animate">
+                                                              <div class="form-roup">
+                                                                  <label for="email" class="fs_14 pad-top-2 text-capitalize">Email Address</label>
+                                                                  <input type="text" placeholder="" name="email"  id="email" required="">
+                                                              </div>
+                                                              <div class="form-roup">
+                                                                  <label for="passowrd" class="fs_14 pad-top-2 text-capitalize">Password</label>
+                                                                  <input type="password" placeholder="" name="passowrd" id="password" required="">
+                                                              </div>
+                                                              <div class="form-roup">
+                                                                  <label for="confirmpassword" class="fs_14 pad-top-2 text-capitalize">Confirm Password</label>
+                                                                  <input type="password" placeholder="" name="confirmpassword" id="confirmpassword" required="">
+                                                              </div>
 
-                                                            <button type="button" class="btn btn-default add-top-25 full-width fs_18 ">Next <i class="fas icon  fa-arrow-right pad-left-15"></i></button>
+                                                            <button type="submit" id="submitform" class="btn btn-default add-top-25 full-width fs_18 ">Next <i class="fas icon  fa-arrow-right pad-left-15"></i></button>
 
                                                             <p class="add-top-45 text-center">Already have an account? <span class="blue-1">Sign in</span></p>
-
-                                                          </div>
                                                         </form>
+                                                    </div>
+
 
                                                       </div>
 
