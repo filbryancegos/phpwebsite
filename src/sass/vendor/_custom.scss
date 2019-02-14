@@ -73,8 +73,10 @@ span { color: #00a6ff; cursor: pointer;}
 		color: #fff;
 	}
 	&.btn-pro {
-		background: #4fb9de;
+		background: #00a6ff;
 		color: #fff;
-		padding: 10px;
+	    padding: 12px 24px !important;
+		font-size: 13px !important;
+
 	}
 }

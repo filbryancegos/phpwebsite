@@ -16,7 +16,7 @@ header {
 	.btn.btn-secondary {
 		background-color: #dce0e1;
 		border-color: #dce0e1;
-		padding: 12.5px 24px;
+	    padding: 11px 41px;
 
 		&:hover {
 			border-color: #dce0e1;
@@ -32,6 +32,12 @@ header {
 		img { margin-bottom: -2.5px; }
 	}
 	.auth-btns .btn {
-		padding: 12.5px 30px 12.5px 20px !important;
+		    padding: 11px 30px !important
 	}
+
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #4c5354;
 }
