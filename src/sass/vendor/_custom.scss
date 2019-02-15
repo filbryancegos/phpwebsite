@@ -20,9 +20,16 @@ $rubik: 'Rubik', sans-serif;
 }
 span { color: #00a6ff; cursor: pointer;}
 .blue-1 { color: #00a6ff !important;}
+.blue-2 { color: #4fb9de; }
 .black-1 { color: #212324;}
+.black-2 { color: #151717 !important; }
 .red-1 { color: #ef6969;}
 .bg-1 { background: #00a6ff !important;}
+.gray-1 { color: #3c4142; }
+.gray-2 { color: #a9b3b6;}
+.gray-3 { color: #827d7d;}
+.check-active { color: #28addb; }
+.bg-gray-1 { background: #c7cfd3 !important;}
 .btn {
 	border-radius: 5px;
 	transition: 0.3s;
@@ -34,7 +41,6 @@ span { color: #00a6ff; cursor: pointer;}
 	}
 	&.btn-transparent {
 		background: transparent;
-		padding: 10px 50px;
 		font-size: 17px;
 		color: #b8c4c7;
 	}
@@ -52,10 +58,13 @@ span { color: #00a6ff; cursor: pointer;}
 	}
 	&.btn-3,
 	&.btn-4 {
-		padding: 13px 61px;
+	    padding: 14px 44px;
 		background: $white-1;
 		border-radius: 5px;
 		box-shadow: 1px 1px 1px #888888b3;
+		color: #9ba5a8;
+		font-size: 18px;
+		font-weight: bold;
 
 		&.active {
 			background: #4fb9de;
@@ -76,7 +85,7 @@ span { color: #00a6ff; cursor: pointer;}
 		background: #00a6ff;
 		color: #fff;
 	    padding: 12px 24px !important;
-		font-size: 13px !important;
+		//font-size: 13px !important;
 
 	}
 }

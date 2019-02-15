@@ -61,7 +61,7 @@ submit.addEventListener('click', function(e) {
 	var email = document.querySelector('#email').value;
 	var pass = document.querySelector('#password').value;
 	var confirmpass = document.querySelector('#confirmpassword').value;
-	
+
 	// Validate
     if(email === '' || pass === '' || confirmpass === '') {
 	  showAlert('Please fill in all fields', 'danger');
@@ -70,3 +70,13 @@ submit.addEventListener('click', function(e) {
 		clearFields();
     }
 })
+
+
+
+// $('html').on('click', function(e) {
+//   if (typeof $(e.target).data('form-modal') == 'undefined') {
+// 	  //console.log((typeof $(e.target).data('form-modal') == 'undefined'));
+//     $('.modal').hide();
+// 	$('html').removeClass('modal-backdrop fade show');
+//   }
+// });

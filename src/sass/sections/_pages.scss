@@ -13,11 +13,19 @@
 	border: none;
 }
 
+label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 .icon,
 .dots-indicators li {
 	cursor: pointer;
 }
 
+.form-check-inline {
+	label { color: #aeb5b6; }
+}
+
+.list-group-item {
+	background: #f8fafb;
+}
 .form-group {
 	.insurance { width: 140px; }
 	.countrybirth { width: 260px; }
@@ -27,6 +35,7 @@
 	 .city {
 	 	padding-right: 20px;
 	 }
+
 }
 .death { width: 20%; }
 
@@ -41,8 +50,8 @@
 
 .personal-information {
 	.form-check-inline {
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.person-info {
 		.form-group {
@@ -96,14 +105,14 @@
 
 /* Create a custom radio button */
 .checkmark {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #fff;
-  border-radius: 50%;
-  transition: .3s;
+	position: absolute;
+	top: -4px;
+	left: 14px;
+	height: 22px;
+	width: 22px;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: .3s;
 }
 
 /* On mouse-over, add a grey background color */
@@ -132,10 +141,10 @@
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
-	left: 9px;
+	left: 7px;
 	top: 3px;
 	width: 7px;
-	height: 14px;
+	height: 13px;
 	border: solid white;
 	border-width: 0 2px 2px 0;
 	-webkit-transform: rotate(45deg);
@@ -145,6 +154,20 @@
 }
 
 .my-task {
+	.active {
+		p { color: #1c1d1a; }
+		small {
+			color: #a6d449; font-size: 11px;
+			span { color: #53554e; }
+		}
+	}
+	.gray-card {
+		p { color: #242522; }
+		small {
+			color: #8d9087; font-size: 11px;
+			span { color: #8d9087; }
+		}
+	}
 	.title { color: #48a5ca; }
 	.dropdown-toggle {
 		background: $white-1;
@@ -180,15 +203,15 @@
 		font-size: 13px;
 	}
 	small {
-		color: #a8d352;
+		color: #a6d449;
 		text-transform: uppercase;
 		span { color: #53554e; }
 	}
 	.list-group-item {
 		border: 0;
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 		border-radius: 5px;
-		height: 70px;
+		height: 73px;
 		&.disabled { opacity: .50; }
 		&.sub-file-downloads {
 			height: 60px;
@@ -206,15 +229,31 @@
 		}
 	}
 	p {
-		color: #3c4142;
+		color: #1c1d1a;
 		&.sub-p { color: #827d7d; }
 	}
 	&.task-succesfull {
+		.active {
+			p { font-size: 18px; color: #3c4142; }
+			.sub-p { font-size: 15px !important; color: #827d7d; }
+		}
+		.gray-card {
+			p { font-size: 18px; color: #3c4142; }
+			.sub-p { font-size: 15px !important; color: #827d7d; }
+		}
 		.title { color: #429f25; }
 		&.to-downloads {
 			.list-group-item {
 				background: transparent;
 				border-bottom: 1px solid #dae2e4;
+			}
+		}
+		.list-group-item {
+			height: 88px;
+			margin-bottom: 2px;
+			&.sub-file-downloads {
+				height: 59px;
+				p { font-size: 14px!important; color: #332f2f;}
 			}
 		}
 	}
