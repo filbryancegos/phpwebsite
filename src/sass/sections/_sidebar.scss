@@ -30,6 +30,7 @@
 				&.info-basic:hover .sub-info { 
 					height: auto;
 					opacity: 1;
+					cursor: pointer;
 				}  				
 				&.info-basic:hover > div:not(.sub-info),
 				&.info-full:hover,
