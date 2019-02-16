@@ -13,12 +13,19 @@
 	border: none;
 }
 
-label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
+label, .select-selected { color: #636767; font-size: 15px; font-weight: normal;}
 .icon,
 .dots-indicators li {
 	cursor: pointer;
 }
-
+.list-group {
+	img {
+		cursor: pointer;
+		&:hover {
+			opacity: .5;
+		}
+	}
+}
 .form-check-inline {
 	label { color: #aeb5b6; }
 }
@@ -27,7 +34,7 @@ label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 	background: #f8fafb;
 }
 .form-group {
-	.insurance { width: 140px; }
+	.insurance { width: 140px; border-radius: 3px;}
 	.countrybirth { width: 260px; }
 	.dayofbirth { width: 73px; }
 
@@ -70,8 +77,8 @@ label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 			}
 		}
 		.select-selected {
-			padding: 10px 16px;
-			padding: 13px 16px;
+
+			padding: 15.5px 16px;
 			border-radius: 5px;
 			border: none;
 			//&:after { top: 15px;}
@@ -168,7 +175,7 @@ label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 			span { color: #8d9087; }
 		}
 	}
-	.title { color: #48a5ca; }
+	.title { color: #48a5ca; font-weight: 500;}
 	.dropdown-toggle {
 		background: $white-1;
 		border-radius: 5px;
@@ -230,16 +237,17 @@ label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 	}
 	p {
 		color: #1c1d1a;
+		font-weight: 500;
 		&.sub-p { color: #827d7d; }
 	}
 	&.task-succesfull {
 		.active {
 			p { font-size: 18px; color: #3c4142; }
-			.sub-p { font-size: 15px !important; color: #827d7d; }
+			.sub-p { font-size: 15px !important; color: #827d7d; font-weight: 400;}
 		}
 		.gray-card {
 			p { font-size: 18px; color: #3c4142; }
-			.sub-p { font-size: 15px !important; color: #827d7d; }
+			.sub-p { font-size: 15px !important; color: #827d7d; font-weight: 400;}
 		}
 		.title { color: #429f25; }
 		&.to-downloads {
@@ -272,6 +280,10 @@ label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 	 .survey-button {
 	 	max-width: 73%;
 	 	margin: 0 auto;
+		.btn {
+			font-weight:500;
+			font-size: 16px !important;
+		}
 	 }
 }
 
@@ -414,7 +426,7 @@ label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 			}
 	 }
 	.title { color: #262829; }
-	label { color: #99a0a1; }
+	label { color: #99a0a1; font-size: 15px;}
 	p { color: #64696a;
 		span { color: #00a6ff; cursor: pointer; }
 	 }
@@ -429,13 +441,14 @@ label, .select-selected { color: #636767; font-size: 14px; font-weight: normal;}
 		padding: 59px 48px 5px 48px;
 		@extend %box-shadow;
 	}
-	.card-title { color: #151717; }
+	.card-title { color: #151717; font-weight: 500;}
 	.card-price  {
 		&.free {
 			color: #a9b3b6;
 		}
+
 	}
-	.sub { color: #a9b3b6; }
+	.sub { color: #a9b3b6; font-weight: 500;}
 	.content { color: #99a0a1; }
 	.account {span{color: #00a6ff;}}
 }

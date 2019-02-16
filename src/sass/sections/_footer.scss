@@ -4,9 +4,16 @@ float: right;
 
 	.footer-bottom {
 		ul li {
-			padding: 10px 5px;
+			padding: 5px 11px;
 			font-size: 12px;
 			color: #808e8f;
+			&:not(:last-child) {
+				&:hover {
+					background: #e6eced;
+					border-radius: 5px;
+					cursor: pointer;
+				}
+			}
 		}
 
 		.save-info {
@@ -17,10 +24,16 @@ float: right;
 		.buble {
 			background: #fff;
 			border-radius: 9px;
-			top: -57px;
-			padding: 28px 20px;
+			top: -12px;
+			padding: 7px 12px;
 			right: 165px;
 			z-index: 2;
+			width: 237px;
+			height: 109px;
+			font-size: 14px;
+			color: #808e8f;
+			font-weight: normal;
+
 
 			&:after {
 				content: '';
@@ -35,5 +48,13 @@ float: right;
 			}
 		}
 
+	}
+}
+
+.footer-logo {
+	span {
+		font-weight: normal !important;
+		font-size: 14px;
+		color: #585c5c;
 	}
 }

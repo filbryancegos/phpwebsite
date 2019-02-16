@@ -142,11 +142,16 @@ button { border-radius: 0; }
     flex-wrap: wrap;
 }
 
-.fw-bold {
-    font-weight: 600;
+
+
+.fw-medium {
+	font-weight: 500;
 }
 .fw-regular {
-    font-weight: 400;
+	font-weight: 400;
+}
+.fw-bold {
+	font-weight: 700;
 }
 
 /*Display*/

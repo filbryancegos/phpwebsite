@@ -19,10 +19,11 @@ $rubik: 'Rubik', sans-serif;
 .btn {
 	&.btn-1 {
 		background: $green-1;
-		padding: 14px 35px;
+		padding: 14px 29px;
 		color: $white-1;
 		border-radius: 5px;
 		font-size: 18px;
+		
 		&:hover {
 			color: $white-1;
 		 }

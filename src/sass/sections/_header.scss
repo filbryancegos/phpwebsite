@@ -4,6 +4,9 @@
 
 
 }
+.navbar-brand {
+	color: #3c4142 !important;
+}
 
 header {
 
@@ -25,8 +28,8 @@ header {
 
 		i, span { color: #7b7d7e; }
 
-		span { 
-			font-weight: 500; 
+		span {
+			font-weight: 500;
 			margin-left: 13px;
 		}
 	}
@@ -35,7 +38,7 @@ header {
 		color: #555c60;
 		img { margin-bottom: -2.5px; }
 
-		span { 
+		span {
 			color: #555c60;
 			font-weight: 500;
 		}
@@ -51,7 +54,7 @@ header {
 
 .navbar-light .navbar-nav {
 	.nav-item {
-		img.rounded-circle { 
+		img.rounded-circle {
 			border: 3px solid #e5e9ea;
 			padding: 1.5px;
 		}
@@ -59,14 +62,14 @@ header {
 		.nav-link {
 			color: #4c5354;
 			padding: 8px 12px !important;
-			font-weight: 500; 
+			font-weight: 500;
 
 			i { font-weight: 500; }
 
 			&.dropdown-toggle:after {
 				background: url("../images/chevron-down.png");
 				display: inline-block;
-				margin-left: 5px; 
+				margin-left: 5px;
 				vertical-align: unset;
 				content: "";
 				border: 0;
@@ -83,22 +86,22 @@ header {
 			box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, .05);
 
 			p {
-				font-weight: 500; 
+				font-weight: 500;
 				font-size: 13px;
 
 				span {
 					display: block;
 					&:first-child { color: #1f9bcd; }
-					&:last-child { 
+					&:last-child {
 						color: #827d7d;
-						font-weight: 400; 
+						font-weight: 400;
 					}
 				}
 			}
 
 			.dropdown-item {
-				&.active, 
-				&:active { 
+				&.active,
+				&:active {
 					color: #16181b;
 					text-decoration: none;
 					background-color: #f8fafb;
