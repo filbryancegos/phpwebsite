@@ -32,6 +32,24 @@ headerInfoList.forEach(function(elem) {
 })
 
 
+var hamburger = document.querySelector('#hamburger-icon');
+var sidebar = document.querySelector('.sidebar');
+var mainSection = document.querySelector('.main-section');
+var navbar = document.querySelector('.navbar-brand');
+
+
+
+function burger(e) {
+	console.log(e.target);
+	hamburger.classList.toggle('active');
+	sidebar.classList.toggle('sidebar-active');
+	mainSection.classList.toggle('sidebar-active');
+	navbar.classList.toggle('sidebar-active');
+	return false;
+}
+
+hamburger.addEventListener('click', burger);
+
 
  var form = document.querySelector('#form-sign-2');
  var submit = document.querySelector('#submitform');

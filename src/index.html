@@ -54,8 +54,8 @@
     </div>
 
   <div class="container-fluid p-0">
-    <section class="sidebar">
-      <aside style="display: none">
+    <section class="sidebar ">
+      <aside class="d-none">
         <div class="sidebar-header">
           <div class="header-logo">
             <img src="images/logo.png" class="img-fluid " alt="Responsive image">
@@ -76,10 +76,10 @@
           </div>
           <div class="header-info">
             <div class="info info-basic ">
-              <div class="info-basic d-flex justify-content-between align-items-center text-primary">
-                <i class="fas fa-user-alt"></i>
+              <div class="info-basic d-flex justify-content-between align-items-center text-muted font-weight-normal">
+                <img class="mr-4" src="images/basic-info-icon.png">
                 <p>Basic information</p>
-                <span>12</span>
+                <span class="ml-auto text-muted">12</span>
               </div>
               <ol class="dots-indicators d-flex flex-content-start add-top-4 add-left-3 pos-relative">
                 <li class="active">
@@ -90,7 +90,7 @@
                 <div class="info-basic-tooltip pos-absolute" style="display: none;">
                   <div class="tooltip-container full-width full-height d-flex justify-content-around align-items-center flex-column font-weight-normal"
                   >
-                  <div class="basic-tooltip-title full-width d-flex justify-content-start align-items-center">
+                  <div class="basic-tooltip-title full-width d-flex justify-content-start align-items-center ">
                     <span>1</span>
                     <span class="ml-3">Decease Full Name</span>
                   </div>
@@ -102,14 +102,14 @@
               </div>
             </ol>
           </div>
-          <div class="info info-full d-flex justify-content-between align-items-center text-muted">
-            <i class="fas fa-clipboard-list"></i>
+          <div class="info info-full d-flex justify-content-between align-items-center text-muted font-weight-normal">
+            <img class="mr-5" src="images/information-icon.png">
             <p >Decease full information</p>
-            <span>12</span>
+            <span class="ml-auto text-muted">12</span>
           </div>
-          <div class="info info-others d-flex justify-content-start align-items-center text-muted">
-            <i class="fas icon  fa-bookmark"></i>
-            <p >Other information</p>
+          <div class="info info-others d-flex justify-content-start align-items-center text-muted font-weight-normal">
+            <img class="mr-4" src="images/other-info-icon.png">
+            <p class="">Other information</p>
           </div>
         </div>
       </div>
@@ -128,8 +128,9 @@
     </aside>
 
     <!-- aside loggedin -->
-    <aside>
-      <div class="sidebar-header loggedin">
+    <aside class="">
+      <div class="sidebar-header loggedin position-relative">
+
         <div class="header-logo text-center add-bottom-8 pad-top-5">
           <img src="images/logo-text-lg.png" class="img-fluid " alt="Responsive image">
         </div>
@@ -137,29 +138,29 @@
           <div class="info-container">
             <div class="info info-basic">
               <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-file-invoice text-muted"></i>
-                <p class="text-muted fs_14 font-weight-normal">My documents</p>
-                <span class="text-muted fs_13 font-weight-normal">6</span>
+                <img class="mr-4" src="images/basic-info-icon.png">
+                <p class="text-muted fs_14 font-weight-bold ">Dashboard</p>
+                <span class="ml-auto text-muted fs_13 font-weight-normal">6</span>
               </div>
               <div class="sub-info">
                 <div class="sub-info-basic d-flex justify-content-start align-items-center add-top">
-                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i>
-                  <p class="text-muted add-left-2 s_14 font-weight-normal">Basic Forms</p>
+                  <img class="add-left-45" src="images/documents-icon.png">
+                  <p class="text-muted add-left-2 s_14 font-weight-bold">Basic Forms</p>
                 </div>
                 <div class="sub-info-benef d-flex justify-content-start align-items-center add-top">
-                  <i class="add-left-45 fas fa-clipboard-list text-muted"></i>
-                  <p class="text-muted add-left-2 s_14 font-weight-normal">Insurance and Beneficiary</p>
+                  <img class="add-left-45" src="images/documents-icon.png">
+                  <p class="text-muted add-left-2 s_14 font-weight-bold">Insurance and Beneficiary</p>
                 </div><div class="sub-info-other d-flex justify-content-start align-items-center add-top">
                   <i class="add-left-45 fas fa-clipboard-list text-muted"></i>
-                  <p class="text-muted add-left-2 s_14 font-weight-normal">Others</p>
+                  <p class="text-muted add-left-2 s_14 font-weight-bold">Others</p>
                 </div>
 
               </div>
             </div>
             <div class="info info-full d-flex justify-content-between align-items-center text-muted">
-              <i class="fas fa-list-ul text-muted"></i>
-              <p class="text-muted fs_14 font-weight-normal">Task Group</p>
-              <span class="text-muted fs_13 font-weight-normal">4</span>
+              <img class="mr-4" src="images/task-icon.png">
+              <p class="text-muted fs_14 font-weight-bold">Task Group</p>
+              <span class="ml-auto text-muted fs_13 font-weight-bold">4</span>
             </div>
             <div class="info info-others d-flex justify-content-start align-items-center text-muted">
               <ol class="dots-indicators d-flex flex-content-center pos-relative">
@@ -179,7 +180,7 @@
                   </div>
                 </div>
               </ol>
-              <p class="text-muted fs_14 font-weight-normal">Task and documents</p>
+              <p class="text-muted fs_14 font-weight-bold ml-2">Task and documents</p>
             </div>
           </div>
         </div>
@@ -203,7 +204,13 @@
 <div class="main-boldy">
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pad-right-15">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light pad-right-15 position-relative">
+    <a class="d-lg-none position-absolute" id="hamburger-icon" href="#" title="Menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+    </a>
+    <img class="d-lg-none burger-logo position-relative" src="images/logo.png" class="img-fluid " alt="Responsive image">
       <a class="navbar-brand  fs_14 d-flex" href="#">
           <img class="add-right" src="images/top-icon.png">
           Decease Basic Information
