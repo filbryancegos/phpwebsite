@@ -1,6 +1,16 @@
+
+.header-login {
+	background: #f8fafb;
+	border: 1px solid #ebf1f2;
+}
 .main-section {
 	width: calc(100% - 413px);
 	float: right;
+	z-index: -1;
+	&.login-section {
+		width: 100%;
+		background: #f8fafb;
+	}
 
 
 }
@@ -8,9 +18,11 @@
 	color: #3c4142 !important;
 }
 
+
+
 header {
 
-	.navbar { padding: rem(45px) 0; }
+	.navbar { padding: rem(25px) 0; }
 	.navbar-brand { padding-left: 400px}
 
 	.burger-logo {

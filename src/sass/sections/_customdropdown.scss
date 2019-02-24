@@ -119,6 +119,11 @@
     }
 }
 
+.form-select-province {
+    .select-items {
+        z-index: 9;
+    }
+}
 
 /*style items (options):*/
 .select-items {

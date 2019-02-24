@@ -452,3 +452,26 @@ label, .select-selected { color: #636767; font-size: 15px; font-weight: normal;}
 	.content { color: #99a0a1; }
 	.account {span{color: #00a6ff;}}
 }
+
+@include media-breakpoint-down(md) {
+	.my-task.task-succesfull .list-group-item {
+		height: auto;
+		&.sub-file-downloads {
+			height: auto;
+		}
+	}
+	.my-task .list-group-item {
+		height: auto;
+	}
+
+	.sign-form .form-sign .col {
+	    padding: 20px 20px 20px 20px
+	}
+	.sign-form .form-sign {
+		width: 100%;
+	}
+	.col {
+
+	}
+
+}

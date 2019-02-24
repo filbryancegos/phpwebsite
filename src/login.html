@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Uponicss</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="css/main.css" rel="stylesheet">
+<body>
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row no-margin login-form loginpopover d-flex justify-content-center align-items-center full-height">
+              <form class="form-login animate" >
+                <div class="col">
+                  <h1 class="title text-center add-bottom-5">Member Login</h1>
+                  <label for="uname" class="fs_14 pad-bottom text-capitalize">Username</label>
+                  <input type="text" placeholder="" name="uname" required>
+
+                  <label for="psw" class="fs_14 pad-bottom add-top-25 text-capitalize"><b>Password</b></label>
+                  <input type="password" placeholder="" name="psw" required>
+
+                  <button type="button" class="btn btn-default add-top-25 full-width fs_18 ">Login</button>
+                  <p class="add-top-45 text-center">Don't have an account? <span>Sign Up</span></p>
+                </div>
+              </form>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  <div class="container-fluid p-0 position-relative">
+    <section class="sidebar position-fixed d-none">
+      <aside class="d-none">
+        <div class="sidebar-header">
+          <div class="header-logo">
+            <img src="images/logo.png" class="img-fluid " alt="Responsive image">
+          </div>
+          <div class="header-chart full-width mb-5">
+            <div class="donut-chart-block block">
+              <div class="donut-chart">
+                <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
+                <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
+                <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
+                <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+                <p class="center-date d-flex justify-content-center align-items-center">
+                  <span class="first-font-color">10<span><sup>%</sup></span></span>
+                  <span class="scnd-font-color">1/12</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="header-info">
+            <div class="info info-basic ">
+              <div class="info-basic d-flex justify-content-between align-items-center text-muted font-weight-normal">
+                <img class="mr-4" src="images/basic-info-icon.png">
+                <p class="font-weight-bold">Basic information</p>
+                <span class="ml-auto text-muted">12</span>
+              </div>
+              <ol class="dots-indicators d-flex flex-content-start add-top-4 add-left-3 pos-relative">
+                <li class="active">
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <div class="info-basic-tooltip pos-absolute" style="display: none;">
+                  <div class="tooltip-container full-width full-height d-flex justify-content-around align-items-center flex-column font-weight-normal"
+                  >
+                  <div class="basic-tooltip-title full-width d-flex justify-content-start align-items-center ">
+                    <span>1</span>
+                    <span class="ml-3 font-weight-bold">Decease Full Name</span>
+                  </div>
+                  <div class="basic-tooltip-name d-flex flex-column full-width">
+                    <span>Rifanyl Monserate</span>
+                    <span class="full-width text-right"><i class="fas icon  fa-pen fa-xs" full-width=""></i></span>
+                  </div>
+                </div>
+              </div>
+            </ol>
+          </div>
+          <div class="info info-full d-flex justify-content-between align-items-center text-muted font-weight-normal">
+            <img class="mr-5" src="images/information-icon.png">
+            <p class="font-weight-bold">Decease full information</p>
+            <span class="ml-auto text-muted">12</span>
+          </div>
+          <div class="info info-others d-flex justify-content-start align-items-center text-muted font-weight-normal">
+            <img class="mr-4" src="images/other-info-icon.png">
+            <p class="font-weight-bold">Other information</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+       <div class="sidebar-footer-container pos-relative">
+         <div class="footer-info">
+          Sending healing
+          <br>prayers and
+          <br>comforting hugs
+        </div>
+        <div class="footer-logo d-flex align-items-center full-width justify-content-start">
+          <img src="images/footer-logo-right.png" class="img-fluid " alt="Footer logo">
+          <span>Uponloss</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- aside loggedin -->
+    <aside class="">
+      <div class="sidebar-header loggedin position-relative">
+
+        <div class="header-logo text-center add-bottom-8 pad-top-5">
+          <img src="images/logo-text-lg.png" class="img-fluid " alt="Responsive image">
+        </div>
+        <div class="header-info">
+          <div class="info-container">
+            <div class="info info-basic">
+              <div class="d-flex justify-content-between align-items-center">
+                <img class="mr-4" src="images/basic-info-icon.png">
+                <p class="text-muted fs_14 font-weight-bold ">My Documents</p>
+                <span class="ml-auto text-muted fs_13 font-weight-normal">6</span>
+              </div>
+              <div class="sub-info d-none">
+                <div class="sub-info-basic d-flex justify-content-start align-items-center add-top">
+                  <img class="add-left-45" src="images/documents-icon.png">
+                  <p class="text-muted add-left-2 s_14 font-weight-bold">Basic Forms</p>
+                </div>
+                <div class="sub-info-benef d-flex justify-content-start align-items-center add-top">
+                  <img class="add-left-45" src="images/documents-icon.png">
+                  <p class="text-muted add-left-2 s_14 font-weight-bold">Insurance and Beneficiary</p>
+                </div><div class="sub-info-other d-flex justify-content-start align-items-center add-top">
+                  <img class="add-left-45" src="images/documents-icon.png">
+                  <p class="text-muted add-left-2 s_14 font-weight-bold">Others</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="info info-full d-flex justify-content-between align-items-center text-muted">
+              <img class="mr-4" src="images/task-icon.png">
+              <p class="text-muted fs_14 font-weight-bold">Task Group</p>
+              <span class="ml-auto text-muted fs_13 font-weight-bold">4</span>
+            </div>
+            <div class="info info-others d-flex justify-content-start align-items-center text-muted">
+              <ol class="dots-indicators d-flex flex-content-center pos-relative">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <div class="info-basic-tooltip pos-absolute" style="display: none;">
+                  <div class="tooltip-container full-width full-height d-flex justify-content-around align-items-center flex-column font-weight-normal">
+                    <div class="basic-tooltip-title full-width d-flex justify-content-start align-items-center">
+                      <span>1</span>
+                      <span class="ml-3">Decease Full Name</span>
+                    </div>
+                    <div class="basic-tooltip-name d-flex flex-column full-width">
+                      <span>Rifanyl Monserate</span>
+                      <span class="full-width text-right"><i class="fas icon  fa-pen fa-xs" full-width=""></i></span>
+                    </div>
+                  </div>
+                </div>
+              </ol>
+              <p class="text-muted fs_14 font-weight-bold ml-2">Task and documents</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+       <div class="sidebar-footer-container pos-relative pad-top-2">
+         <div class="footer-info pad-left-3">
+          Sending healing
+          <br>prayers and
+          <br>comforting hugs
+        </div>
+      </div>
+      <div class="footer-logo d-flex align-items-center full-width justify-content-start pad-left-3">
+        <img src="images/footer-logo-right.png" class="img-fluid " alt="Footer logo">
+        <span>Uponloss</span>
+      </div>
+    </div>
+  </aside>
+
+</section>
+<div class="main-boldy position-relative">
+
+  <header class="position-fixed w-100 ">
+    <div class="header-login d-flex justify-content-between align-items-center container-fluid pad-bottom pad-top">
+        <button class="btn btn-secondary fs_13 rounded d-flex align-items-center">
+            <img src="images/arrow-thin-right.png">
+            <span>Back</span>
+        </button>
+        <div class="logo-image">
+            <img src="images/logotext.png">
+        </div>
+        <div class="auth-btns d-flex align-items-center">
+            <div class="signup add-right-35">
+            <img src="images/document-edit.png">
+            <span class="fs_13 add-left">Sign up</span>
+            </div>
+            <button type="button" class="btn btn-pro pr-3 pl-1 rounded fs_12 d-flex align-items-center justify-content-between" data-toggle="modal" data-target="#loginModal">
+                <img src="images/user-icon.png">
+                <span class="add-left text-white fs_13 font-weight-normal">Login</span>
+            </button>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="main-section login-section position-relative mt-5">
+        <section>
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
+            <div class="col-sm-12 text-center add-bottom-7">
+              <p class="fs_14 top-title add-bottom">lorem ipsum sit amet</p>
+              <h1 class="title">Multiple options template survey</h1>
+            </div>
+
+            <div class="col survey-button text-center">
+              <button type="button" class="btn btn-2 text-muted fs_14">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted fs_14">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted fs_14">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted fs_14">Selection 1</button>
+              <button type="button" class="btn btn-2 text-muted fs_14">Selection 1</button>
+
+            </div>
+
+          </div>
+
+          <div class="row no-margin">
+            <div class="col text-center">
+              <button type="button" class="btn btn-1 bg-1 ">Next<img class="add-left-25" src="images/arrow-right.png"></button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="row no-margin add-top-5 add-bottom-4">
+            <div class="col">
+              <ol class="dots-indicators d-flex flex-content-center">
+                <li class="active"></li>
+                <li ></li>
+                <li ></li>
+                <li ></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
+
+            <div class="col-sm-12 text-center add-bottom-75">
+              <p class="fs_14 top-title add-bottom">Citizen is important to verify the loss one identity</p>
+              <h1 class="title">Is the Deceased Citizen Canadia?</h1>
+            </div>
+          </div>
+
+          <div class="row no-margin add-bottom-10 insurance-button">
+            <div class="col d-flex flex-content-center">
+              <button type="button" class="btn btn-3">No</button>
+              <button type="button" class="btn btn-4 active">Yes <img class="add-left-25" src="images/arrow-right.png"></button>
+            </div>
+
+          </div>
+
+
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
+
+            <div class="col-sm-12 text-center add-bottom-75">
+              <p class="fs_14 top-title add-bottom">Citizen is important to verify the loss one identity</p>
+              <h1 class="title">Is the Deceased one has Insurance</h1>
+            </div>
+          </div>
+
+          <div class="row no-margin add-bottom-10 insurance-button">
+            <div class="col d-flex flex-content-center">
+              <button type="button" class="btn btn-3">No</button>
+              <button type="button" class="btn btn-4 active">Yes <img class="add-left-25" src="images/arrow-right.png"></button>
+            </div>
+
+          </div>
+          <div class="row no-margin">
+            <div class="col text-center"><button type="button" class="btn btn-1">Next<img class="add-left-25" src="images/arrow-right.png"></button></div>
+          </div>
+
+
+
+
+          <div class="row no-margin add-top-5 add-bottom-4">
+            <div class="col">
+              <ol class="dots-indicators d-flex flex-content-center">
+                <li class="active"></li>
+                <li ></li>
+                <li ></li>
+                <li ></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="row no-margin template-survery add-top-10 add-bottom-10">
+            <div class="col-sm-12 text-center add-bottom-75">
+              <p class="fs_14 top-title add-bottom">Select country of the deceased one</p>
+              <h1 class="title">What country did the deceased live in?</h1>
+            </div>
+          </div>
+
+          <div class="row no-margin add-bottom-10 insurance-button">
+            <div class="col d-flex flex-content-center">
+              <button type="button" class="btn btn-3">USA</button>
+              <button type="button" class="btn btn-4 active">Canada</button>
+            </div>
+
+          </div>
+
+
+          <div class="row no-margin add-top-5 add-bottom-4">
+            <div class="col">
+              <ol class="dots-indicators d-flex flex-content-center">
+                <li class="active"></li>
+                <li ></li>
+                <li ></li>
+                <li ></li>
+              </ol>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <div class="row no-margin template-survery add-top-10 add-bottom-7">
+            <div class="col-sm-12 text-center add-bottom-75">
+              <p class="fs_14 top-title add-bottom">What state/province did the deceased live in?</p>
+              <h1 class="title">Select province the decease live in?</h1>
+            </div>
+          </div>
+
+          <div class="row no-margin select-province">
+            <div class="d-flex full-width flex-content-center ">
+
+              <form id="form-select-province" class="form-select-province" >
+                <div class="col d-flex flex-content-center flex-column flex-md-row">
+                  <div class="form-group d-flex vertical-align ">
+                    <label for="sel1" class="state text-uppercase">State</label>
+                    <div class="custom-select-arrow" style="width:214px;">
+                      <select>
+                        <option value="0">Select state</option>
+                        <option value="1">USA</option>
+                        <option value="0">California</option>
+                        <option value="1">Sample</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group d-flex vertical-align ">
+                    <label for="sel1" class="city text-uppercase">City</label>
+                    <div class="custom-select-arrow" style="width:214px;">
+                      <select>
+                        <option value="0">Select city</option>
+                        <option value="1">New york</option>
+                        <option value="0">California</option>
+                        <option value="1">Sample</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+
+                </div>
+              </form>
+
+
+            </div>
+          </div>
+
+
+          <div class="row no-margin add-top-10">
+            <div class="col text-center"><button type="button" class="btn btn-1 bg-1">Next<img class="add-left-25" src="images/arrow-right.png"></button></div>
+          </div>
+
+          <div class="row no-margin add-top-5 add-bottom-4">
+            <div class="col">
+              <ol class="dots-indicators d-flex flex-content-center">
+                <li class="active"></li>
+                <li ></li>
+                <li ></li>
+                <li ></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="login-section">
+          <p class="fs_14 fw-medium text-center">Unsure with your information? <span>Save Continue Later</span></p>
+      </footer>
+    </div>
+
+
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

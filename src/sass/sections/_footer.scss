@@ -1,6 +1,15 @@
 footer {
 width: calc(100% - 413px);
 float: right;
+&.login-section {
+	width: 100%;
+	background: #eff3f4;
+	padding: 20px;
+	p {
+		color: #64696a;
+		span { color: #00a6ff;}
+	}
+}
 
 	.footer-bottom {
 		ul li {
