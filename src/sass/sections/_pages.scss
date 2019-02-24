@@ -438,7 +438,8 @@ label, .select-selected { color: #636767; font-size: 15px; font-weight: normal;}
 	.card {
 		width: 328px;
 		margin: 0 auto;
-		padding: 59px 48px 5px 48px;
+	    padding: 26px 40px 0px 40px;
+		height: 385px;
 		@extend %box-shadow;
 	}
 	.card-title { color: #151717; font-weight: 500;}
@@ -451,6 +452,7 @@ label, .select-selected { color: #636767; font-size: 15px; font-weight: normal;}
 	.sub { color: #a9b3b6; font-weight: 500;}
 	.content { color: #99a0a1; }
 	.account {span{color: #00a6ff;}}
+
 }
 
 @include media-breakpoint-down(md) {
@@ -470,8 +472,13 @@ label, .select-selected { color: #636767; font-size: 15px; font-weight: normal;}
 	.sign-form .form-sign {
 		width: 100%;
 	}
-	.col {
+}
 
+@include media-breakpoint-down(sm) {
+	.pricing {
+		.pr-mobile {
+			padding-right: 0!important;
+			padding-left: 0!important;
+		}
 	}
-
 }
