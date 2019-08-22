@@ -4,7 +4,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /*
-    Author     : Labboss
+    Author     : 
 */
 
 /*CSS RESET*/
@@ -375,54 +375,4 @@ button { border-radius: 0; }
 .add-right-10 { margin-right: 100px !important;}
 
 
-/*Override*/
 
-.fancybox-caption { border-top: 0 none !important; }
-
-.fancybox-overlay { background: rgba(0, 0, 0, 0.75) !important; }
-
-.text-shadow {
-    text-shadow: 0px 4px 16px $black-1;
-}
-
-.bg-black-1 { background-color: black; }
-
-.box-shadow {
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* Firefox 3.5 - 3.6 */
-    box-shadow:         0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.card-container  {
-    perspective: 600;
-    position: relative;
-}
-
-.rotate {
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    transition: all 3s ease-in-out;
-}
-.card .side {
-    backface-visibility: hidden;
-    border-radius: 6px;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-}
-.card .back {
-    background: #eaeaed;
-    color: #0087cc;
-    line-height: 150px;
-    text-align: center;
-    transform: rotateY(180deg);
-}

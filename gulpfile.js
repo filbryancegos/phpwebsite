@@ -1,17 +1,15 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var imagemin = require('gulp-imagemin');
-var browserSync = require('browser-sync').create();
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var errorHandler = require('gulp-error-handle');
-
-
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
+const browserSync = require('browser-sync').create();
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+const errorHandler = require('gulp-error-handle');
 
 //catch potential error
-var logError = function(err) {
+const logError = function(err) {
   gutil.log(err);
   this.emit('end');
 };

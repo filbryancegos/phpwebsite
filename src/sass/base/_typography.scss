@@ -1,27 +1,28 @@
 html, body {
-  background-color: $gray-1;
-  color: $black-1;
+  background-color: $white;
+  color: $black-2;
 }
 
 body, input, select, textarea, button, a {
-   font-family: $rubik;
+   font-family: $work-sans;
+   font-weight: 300;
 }
 
 p, address {
-    font-family: $rubik;
-    font-size: rem(15px);
+    font-family: $work-sans;
+    font-size: rem(12px);
     line-height: rem(20px);
 }
 
 h1 {
-	font-size: 36px;
-	color: $blue-1;
-    font-weight: 500;
+	font-size: 60px;
+	color: $black-2;
+    font-weight: 400;
 }
 
 h2 {
 
-    font-weight: 500 !important;
+    font-weight: 400 !important;
 }
 
 .fs_20 {

@@ -1,0 +1,22 @@
+#demo {
+    min-height:651px;
+    background:url('../images/banner.jpg') no-repeat 0 -400px;
+    text-align:center;
+    color:#ffffff;
+    h1 {
+        color: $white;
+        text-transform: uppercase;
+    }
+    p {
+        color: $yellow;
+    }
+}
+
+#we-offer {
+    padding: 8rem 0;
+    background: $white-2;
+    h4 {
+        padding-bottom: .5rem;
+        font-size: 14px;
+    }
+}

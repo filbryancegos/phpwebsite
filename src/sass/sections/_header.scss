@@ -1,133 +1,23 @@
 
-.header-login {
-	background: #f8fafb;
-	border: 1px solid #ebf1f2;
+header {padding: 10px;}
+.logo {
+    width: 30px;
+    height: 30px;
+    border: 3px solid $green;
+    border-radius: 50px;
 }
-.main-section {
-	width: calc(100% - 413px);
-	float: right;
-	z-index: -1;
-	&.login-section {
-		width: 100%;
-		background: #f8fafb;
-	}
-
-
-}
-.navbar-brand {
-	color: #3c4142 !important;
-}
-
-
-
-header {
-
-	.navbar { padding: rem(25px) 0; }
-	.navbar-brand { padding-left: 400px}
-
-	.burger-logo {
-		left: 87px;
-		top: -7px;
-	}
-}
-
-
-.header-login {
-	.btn.btn-secondary {
-		background-color: #dce0e1;
-		border-color: #dce0e1;
-		padding: rem(11.5px) rem(28.55px);
-
-		&:hover {
-			border-color: #dce0e1;
-			opacity: .8;
-		}
-
-		i, span { color: #7b7d7e; }
-
-		span {
-			font-weight: 500;
-			margin-left: 13px;
-		}
-	}
-
-	.signup {
-		color: #555c60;
-		img { margin-bottom: -2.5px; }
-
-		span {
-			color: #555c60;
-			font-weight: 500;
-		}
-	}
-	.auth-btns .btn {
-		padding: 8.5px 40px 8.5px 15px !important;
-
-		span { font-weight: 500; }
-	}
-
-
-}
-
-.navbar-light .navbar-nav {
-	.nav-item {
-		img.rounded-circle {
-			border: 3px solid #e5e9ea;
-			padding: 1.5px;
-		}
-
-		.nav-link {
-			color: #4c5354;
-			padding: 8px 12px !important;
-			font-weight: 500;
-
-			i { font-weight: 500; }
-
-			&.dropdown-toggle:after {
-				background: url("../images/chevron-down.png");
-				display: inline-block;
-				margin-left: 5px;
-				vertical-align: unset;
-				content: "";
-				border: 0;
-				height: 6px;
-				width: 11px;
-				background-repeat: no-repeat;
-			}
-		}
-
-		.dropdown-menu {
-			left: -102px;
-			width: 283px;
-			border-color: transparent;
-			box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, .05);
-
-			p {
-				font-weight: 500;
-				font-size: 13px;
-
-				span {
-					display: block;
-					&:first-child { color: #1f9bcd; }
-					&:last-child {
-						color: #827d7d;
-						font-weight: 400;
-					}
-				}
-			}
-
-			.dropdown-item {
-				&.active,
-				&:active {
-					color: #16181b;
-					text-decoration: none;
-					background-color: #f8fafb;
-				}
-
-				&:not(:fisrt-child) p { color: #404242; }
-				&:last-child p { color: #99a0a1; }
-			}
-		}
-	}
-
+nav ul {
+    li { 
+        padding: 10px;
+        text-transform: uppercase;
+        &.active,
+        &:hover {
+            border-bottom: 1px solid $yellow;
+        }
+        a {
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+    }
 }

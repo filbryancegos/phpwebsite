@@ -13,16 +13,12 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 
 /*load vendor*/
 @import 'vendor/bootstrap.scss';
-@import 'vendor/custom.scss';
 
 /*load mixins*/
 @import 'mixins/mixins_general';
 @import 'mixins/mixins_breakpoints';
 
 /*load components*/
-@import 'components/chart.scss';
-@import 'components/tooltip.scss';
-@import 'components/burger.scss';
 
 /*load base*/
 @import 'base/utilities';
@@ -34,7 +30,6 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 
 /*load sections*/
 @import 'sections/header';
-@import 'sections/sidebar';
 @import 'sections/pages';
-@import 'sections/customdropdown';
+@import 'sections/home';
 @import 'sections/footer';
